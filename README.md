@@ -25,8 +25,11 @@ This is a collection of resources that I will at some point clean up and organiz
   (2022-12-07, Georgi Gerganov)
 
 
-### Articles
+### Articles, Podcasts, etc.
 
+- [Bringing Whisper and LLaMA to the masses](https://changelog.com/podcast/532)
+  (2022-03-15, The Changelog & Georgi Gerganov)
+  
 - [Alpaca: A Strong, Replicable Instruction-Following Model](https://crfm.stanford.edu/2023/03/13/alpaca.html)
   (2023-03-13, Stanford CRFM)
 
