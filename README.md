@@ -25,14 +25,17 @@ This is a collection of resources that I will at some point clean up and organiz
   (2022-12-07, Georgi Gerganov)
 
 
-### Articles, Podcasts, etc.
+### Resources
 
 - [Bringing Whisper and LLaMA to the masses](https://changelog.com/podcast/532)
-  (2022-03-15, The Changelog & Georgi Gerganov)
+  (2022-03-15, The Changelog & Georgi Gerganov, Podcast Episode)
   
 - [Alpaca: A Strong, Replicable Instruction-Following Model](https://crfm.stanford.edu/2023/03/13/alpaca.html)
-  (2023-03-13, Stanford CRFM)
+  (2023-03-13, Stanford CRFM, Project Homepage)
+
+- [Large language models are having their Stable Diffusion moment](https://simonwillison.net/2023/Mar/11/llama/)
+  (2023-03-10, Simon Willison, Blog)
 
 - [Running LLaMA 7B and 13B on a 64GB M2 MacBook Pro with llama.cpp](https://til.simonwillison.net/llms/llama-7b-m2)
-  (2023-03-10, Simon Willison)
+  (2023-03-10, Simon Willison, Blog/Today I Learned)
   
