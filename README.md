@@ -8,7 +8,7 @@ This is a collection of resources that I will at some point clean up and organiz
   LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
   (2023-03-28, Nomic AI, OpenAI ToS)
  
-- [Dolly](https://github.com/databrickslabs/dolly)
+- [Dolly](https://github.com/databrickslabs/dolly) -
   Large language model trained on the Databricks Machine Learning Platform
   (2023-03-24, Databricks Labs, Apache)
   
@@ -51,8 +51,10 @@ This is a collection of resources that I will at some point clean up and organiz
 
 ### Resources
 
+- [Cerebras-GPT vs LLaMA AI Model Comparison](https://www.lunasec.io/docs/blog/cerebras-gpt-vs-llama-ai-model-comparison/)
+  (2023-03-29, LunaSec, Blog Post)
+
 - [Cerebras-GPT: Family of Open, Compute-efficient, LLMs](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
-  Seven GPT-3 models from 111M - 13B parameters using the Chinchilla formula. Set new benchmarks for accuracy and compute efficiency.
   (2023-03-28, Cerebras, Blog Post)
 
 - [Hello Dolly: Democratizing the magic of ChatGPT with open models](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
