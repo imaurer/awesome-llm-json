@@ -8,6 +8,10 @@ This is a collection of resources that I will at some point clean up and organiz
   Demo, data and code to train an assistant-style large language model with ~800k GPT-3.5-Turbo Generations based on LLaMa.
   (2023-03-28, Nomic AI)
   
+- [bloomz.cpp](https://github.com/NouamaneTazi/bloomz.cpp)
+  Inference of HuggingFace's BLOOM-like models in pure C/C++.
+  (2023-03-16, Nouamane Tazi)
+  
 - [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp) -
   Locally run an Instruction-Tuned Chat-Style LLM
   (2023-03-16, Kevin Kwok)
@@ -27,6 +31,10 @@ This is a collection of resources that I will at some point clean up and organiz
 
 ### Resources
 
+- [Cerebras-GPT: Family of Open, Compute-efficient, LLMs](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
+  Seven GPT-3 models from 111M - 13B parameters using the Chinchilla formula. Set new benchmarks for accuracy and compute efficiency.
+  (2022-03-28, Cerebras, Blog Post)
+
 - [Bringing Whisper and LLaMA to the masses](https://changelog.com/podcast/532)
   (2022-03-15, The Changelog & Georgi Gerganov, Podcast Episode)
   
@@ -34,7 +42,7 @@ This is a collection of resources that I will at some point clean up and organiz
   (2023-03-13, Stanford CRFM, Project Homepage)
 
 - [Large language models are having their Stable Diffusion moment](https://simonwillison.net/2023/Mar/11/llama/)
-  (2023-03-10, Simon Willison, Blog)
+  (2023-03-10, Simon Willison, Blog Post)
 
 - [Running LLaMA 7B and 13B on a 64GB M2 MacBook Pro with llama.cpp](https://til.simonwillison.net/llms/llama-7b-m2)
   (2023-03-10, Simon Willison, Blog/Today I Learned)
