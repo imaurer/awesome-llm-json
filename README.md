@@ -7,6 +7,10 @@ This is a collection of resources that I will at some point clean up and organiz
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
   LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
   (2023-03-28, Nomic AI, OpenAI ToS)
+ 
+- [Dolly](https://github.com/databrickslabs/dolly)
+  Large language model trained on the Databricks Machine Learning Platform
+  (2023-03-24, Databricks Labs, Apache)
   
 - [bloomz.cpp](https://github.com/NouamaneTazi/bloomz.cpp)
   Inference of HuggingFace's BLOOM-like models in pure C/C++.
@@ -49,10 +53,13 @@ This is a collection of resources that I will at some point clean up and organiz
 
 - [Cerebras-GPT: Family of Open, Compute-efficient, LLMs](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
   Seven GPT-3 models from 111M - 13B parameters using the Chinchilla formula. Set new benchmarks for accuracy and compute efficiency.
-  (2022-03-28, Cerebras, Blog Post)
+  (2023-03-28, Cerebras, Blog Post)
+
+- [Hello Dolly: Democratizing the magic of ChatGPT with open models](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
+  (2023-03-24, databricks, Blog Post)
 
 - [Bringing Whisper and LLaMA to the masses](https://changelog.com/podcast/532)
-  (2022-03-15, The Changelog & Georgi Gerganov, Podcast Episode)
+  (2023-03-15, The Changelog & Georgi Gerganov, Podcast Episode)
   
 - [Alpaca: A Strong, Replicable Instruction-Following Model](https://crfm.stanford.edu/2023/03/13/alpaca.html)
   (2023-03-13, Stanford CRFM, Project Homepage)
