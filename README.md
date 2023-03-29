@@ -2,49 +2,47 @@
 
 This is a collection of resources that I will at some point clean up and organize.
 
-I am trying to track details like whether a model falls under OpenAI's Terms of Service (ToS), let me know if there are other similar issues.
-
 ### Repositories
 
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
-  LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa. (OpenAI ToS)
-  (2023-03-28, Nomic AI)
+  LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
+  (2023-03-28, Nomic AI, OpenAI ToS)
   
 - [bloomz.cpp](https://github.com/NouamaneTazi/bloomz.cpp)
   Inference of HuggingFace's BLOOM-like models in pure C/C++.
-  (2023-03-16, Nouamane Tazi)
+  (2023-03-16, Nouamane Tazi, MIT License)
   
 - [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp) -
   Locally run an Instruction-Tuned Chat-Style LLM
-  (2023-03-16, Kevin Kwok)
+  (2023-03-16, Kevin Kwok, MIT License)
 
 - [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) -
-  Code and documentation to train Stanford's Alpaca models, and generate the data. (OpenAI ToS)
-  (2023-03-13, Stanford CRFM)
+  Code and documentation to train Stanford's Alpaca models, and generate the data.
+  (2023-03-13, Stanford CRFM, Apache License, Non-Commercial Data, Meta/OpenAI ToS)
 
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) -
   Port of Facebook's LLaMA model in C/C++. 
-  (2023-03-10, Georgi Gerganov)
+  (2023-03-10, Georgi Gerganov, MIT License)
 
 - [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) -
   ChatRWKV is like ChatGPT but powered by RWKV (100% RNN) language model, and open source.
-  ()
+  (2023-01-09, PENG Bo, Apache License)
   
 - [RWKV-LM](https://github.com/BlinkDL/RWKV-LM) -
   RNN with Transformer-level LLM performance. Combines best of RNN and transformer: fast inference, saves VRAM, fast training.
-  (2022?, PENG Bo)
+  (2022?, PENG Bo, Apache License)
 
 
 ### Spaces, Models & Datasets
 
 - [Cerebras-GPT 7 Models](https://huggingface.co/cerebras)
-  (2023-03-28, Huggingface, Cerebras)
+  (2023-03-28, Huggingface, Cerebras, Apache License)
  
 - [Alpaca Dataset](https://huggingface.co/datasets/tatsu-lab/alpaca)
-  (2023-03-13, Huggingface, Tatsu-Lab)
+  (2023-03-13, Huggingface, Tatsu-Lab, Meta ToS/OpenAI ToS)
   
 - [Alpaca Model Search](https://huggingface.co/models?sort=downloads&search=alpaca)
-  (Huggingface)
+  (Huggingface, Meta ToS/OpenAI ToS)
   
 
 ### Resources
@@ -66,4 +64,4 @@ I am trying to track details like whether a model falls under OpenAI's Terms of 
   (2023-03-10, Simon Willison, Blog/Today I Learned)
   
 - [Introducing LLaMA: A foundational, 65-billion-parameter large language model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)
-  (2023-02-24, Meta AI)
+  (2023-02-24, Meta AI, Meta ToS)
