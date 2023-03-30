@@ -41,7 +41,10 @@ This is a collection of resources that I will at some point clean up and organiz
 
 - [Cerebras-GPT 7 Models](https://huggingface.co/cerebras)
   (2023-03-28, Huggingface, Cerebras, Apache License)
- 
+
+- [Alpine Data Cleaned](https://github.com/gururise/AlpacaDataCleaned)
+  (2023-03-21, Gene Ruebsamen, Apache & OpenAI ToS)
+
 - [Alpaca Dataset](https://huggingface.co/datasets/tatsu-lab/alpaca)
   (2023-03-13, Huggingface, Tatsu-Lab, Meta ToS/OpenAI ToS)
   
