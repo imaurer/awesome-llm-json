@@ -60,6 +60,9 @@ This is a collection of resources that I will at some point clean up and organiz
 - [Hello Dolly: Democratizing the magic of ChatGPT with open models](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
   (2023-03-24, databricks, Blog Post)
 
+- [The RWKV language model: An RNN with the advantages of a transformer](https://johanwind.github.io/2023/03/23/rwkv_overview.html)
+  (2023-03-23, Johan Sokrates Wind, Blog Post)
+  
 - [Bringing Whisper and LLaMA to the masses](https://changelog.com/podcast/532)
   (2023-03-15, The Changelog & Georgi Gerganov, Podcast Episode)
   
