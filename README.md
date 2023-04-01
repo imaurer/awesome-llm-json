@@ -4,6 +4,10 @@ This is a collection of resources that I will at some point clean up and organiz
 
 ### Repositories
 
+- [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
+  4 bits quantization of LLaMA using GPTQ
+  (2023-04-01, qwopqwop200, Meta ToS)
+
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
   LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
   (2023-03-28, Nomic AI, OpenAI ToS)
