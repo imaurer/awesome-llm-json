@@ -4,6 +4,10 @@ This is a collection of resources that I will at some point clean up and organiz
 
 ### Repositories
 
+- [xturing](https://github.com/stochasticai/xturing) -
+  Build and control your own LLMs
+  (2023-04-03, stochastic.ai)
+
 - [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
   4 bits quantization of LLaMA using GPTQ
   (2023-04-01, qwopqwop200, Meta ToS)
