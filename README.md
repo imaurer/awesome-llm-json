@@ -62,6 +62,9 @@ This is a collection of resources that I will at some point clean up and organiz
 
 ### Resources
 
+- [Running GPT4All On a Mac Using Python langchain in a Jupyter Notebook](https://blog.ouseful.info/2023/04/04/running-gpt4all-on-a-mac-using-python-langchain-in-a-jupyter-notebook/)
+  (2023-04-04, Tony Hirst, Blog Post)
+
 - [Cerebras-GPT vs LLaMA AI Model Comparison](https://www.lunasec.io/docs/blog/cerebras-gpt-vs-llama-ai-model-comparison/)
   (2023-03-29, LunaSec, Blog Post)
 
