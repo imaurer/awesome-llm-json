@@ -28,6 +28,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Autonomous Agent Resources
 
+- [Twitter List: Homebrew AGI Club](https://twitter.com/i/lists/1642934512836575232)
+  (2023-04-06, [@altryne](https://twitter.com/altryne)]
+
 - [LangChain: Custom Agents](https://blog.langchain.dev/custom-agents/)
   (2023-04-03, LangChain)
  
