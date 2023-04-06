@@ -1,8 +1,48 @@
 # awesome-decentralized-llm
 
-This is a collection of resources that I will at some point clean up and organize.
+[*Not your model, not your product.*](https://twitter.com/imaurer/status/1642524451009880065?s=20)
 
-### Repositories
+A curated list of decentralized tools that can be used to build products (ToS caveats apply) or do reproducible research.
+
+Currently focused on running Large Language Models (LLMs) locally and creating autonomous agents which can use local or cloud-based models.
+
+## Table of Contents
+
+- [Autonomous Agents](#autonomous-agents)
+- [Edge LLMs](#edge-llms)
+
+
+## Autonomous Agents
+
+
+### Autonomous Agent Repositories
+
+- [babyagi](https://github.com/yoheinakajima/babyagi) -
+  Python script example of AI-powered task management system. Uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. 
+  (2023-04-06, Yohei Nakajima)
+
+- [Auto-GPT](https://github.com/Torantulino/Auto-GPT) -
+  An experimental open-source attempt to make GPT-4 fully autonomous.
+  (2023-04-06, Toran Bruce Richards)
+
+- [JARVIS](https://github.com/microsoft/JARVIS) -
+  JARVIS, a system to connect LLMs with ML community
+  (2023-04-06, Microsoft)
+
+
+### Autonomous Agent Resources
+
+- [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
+  (2023-04-02, Microsoft)
+
+
+## Edge LLMs
+
+### Edge LLM Repositories
+
+- [LMFlow](https://github.com/OptimalScale/LMFlow)
+  An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
+  (2023-04-06, OptimalScale)
 
 - [xturing](https://github.com/stochasticai/xturing) -
   Build and control your own LLMs
@@ -45,7 +85,7 @@ This is a collection of resources that I will at some point clean up and organiz
   (2022?, PENG Bo, Apache License)
 
 
-### Spaces, Models & Datasets
+### Edge LLM Spaces, Models & Datasets
 
 - [Cerebras-GPT 7 Models](https://huggingface.co/cerebras)
   (2023-03-28, Huggingface, Cerebras, Apache License)
@@ -60,7 +100,7 @@ This is a collection of resources that I will at some point clean up and organiz
   (Huggingface, Meta ToS/OpenAI ToS)
   
 
-### Resources
+### Edge LLM Resources
 
 - [Running GPT4All On a Mac Using Python langchain in a Jupyter Notebook](https://blog.ouseful.info/2023/04/04/running-gpt4all-on-a-mac-using-python-langchain-in-a-jupyter-notebook/)
   (2023-04-04, Tony Hirst, Blog Post)
