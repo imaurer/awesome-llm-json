@@ -12,6 +12,8 @@ Currently focused on running Large Language Models (LLMs) locally and creating a
 - [Edge LLMs](#edge-llms)
 
 
+-----
+
 ## Autonomous Agents
 
 
@@ -48,6 +50,7 @@ Currently focused on running Large Language Models (LLMs) locally and creating a
   (2023-03-10, Princeton & Google)
 
 
+-----
 
 ## Edge LLMs
 
