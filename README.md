@@ -1,16 +1,10 @@
 # awesome-decentralized-llm
 
-[*Not your model, not your product.*](https://twitter.com/imaurer/status/1642524451009880065?s=20)
+Collection of resources to build products you can "own" or to perform reproducible research.
 
-A curated list of decentralized tools that can be used to build products (ToS caveats apply) or do reproducible research.
+Remember [*not your model, not your product.*](https://twitter.com/imaurer/status/1642524451009880065?s=20).
 
-Currently focused on running Large Language Models (LLMs) locally and creating autonomous agents which can use local or cloud-based models.
-
-## Table of Contents
-
-- [Autonomous Agents](#autonomous-agents)
-- [Edge LLMs](#edge-llms)
-
+Currently collecting information on [Autonomous Agents](#autonomous-agents) and [Edge LLMs](#edge-llms), but will add new sections as the field evolves.
 
 -----
 
