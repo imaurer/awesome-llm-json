@@ -32,6 +32,9 @@ Currently focused on running Large Language Models (LLMs) locally and creating a
 
 ### Autonomous Agent Resources
 
+- [LangChain: Custom Agents](https://blog.langchain.dev/custom-agents/)
+  (2023-04-03, LangChain)
+ 
 - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
   (2023-04-02, Microsoft)
 
@@ -43,6 +46,8 @@ Currently focused on running Large Language Models (LLMs) locally and creating a
 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
   (2023-03-10, Princeton & Google)
+
+
 
 ## Edge LLMs
 
