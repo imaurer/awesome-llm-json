@@ -35,6 +35,14 @@ Currently focused on running Large Language Models (LLMs) locally and creating a
 - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
   (2023-04-02, Microsoft)
 
+- [Introducing "🤖 Task-driven Autonomous Agent"](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20)
+  (2023-03-29, [@yoheinakajima](https://twitter.com/yoheinakajima))
+
+- [A simple Python implementation of the ReAct pattern for LLMs](https://til.simonwillison.net/llms/python-react-pattern)
+  (2023-03-17, Simon Willison)
+
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
+  (2023-03-10, Princeton & Google)
 
 ## Edge LLMs
 
