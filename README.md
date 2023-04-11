@@ -127,6 +127,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 - [Hello Dolly: Democratizing the magic of ChatGPT with open models](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
   (2023-03-24, databricks, Blog Post)
 
+- [The Coming of Local LLMs](https://nickarner.com/notes/the-coming-of-local-llms-march-23-2023/)
+  (2023-03-23, Nick Arner, Blog Post)
+
 - [The RWKV language model: An RNN with the advantages of a transformer](https://johanwind.github.io/2023/03/23/rwkv_overview.html)
   (2023-03-23, Johan Sokrates Wind, Blog Post)
   
