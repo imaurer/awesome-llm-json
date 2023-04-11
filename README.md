@@ -2,8 +2,6 @@
 
 Collection of LLM resources that can be used to build products you can "own" or to perform reproducible research. Please note there are Terms of Service around some of the weights and training data that should be investigated before commercialization.
 
-Remember [*not your model, not your product.*](https://twitter.com/imaurer/status/1642524451009880065?s=20).
-
 Currently collecting information on [Autonomous Agents](#autonomous-agents) and [Edge LLMs](#edge-llms), but will add new sections as the field evolves.
 
 -----
