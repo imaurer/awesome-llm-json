@@ -115,6 +115,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Edge LLM Resources
 
+- [Summary of Curent Models](https://docs.google.com/spreadsheets/d/1O5KVQW1Hx5ZAkcg8AIRjbQLQzx2wVaLl0SqUu-ir9Fs/edit#gid=1158069878)
+  (2023-04-11, Dr Alan D. Thompson, Google Sheet)
+
 - [Running GPT4All On a Mac Using Python langchain in a Jupyter Notebook](https://blog.ouseful.info/2023/04/04/running-gpt4all-on-a-mac-using-python-langchain-in-a-jupyter-notebook/)
   (2023-04-04, Tony Hirst, Blog Post)
 
