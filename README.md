@@ -53,6 +53,10 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Edge LLM Repositories
 
+- [TurboPilot](https://github.com/ravenscroftj/turbopilot)
+  CoPilot clone that runs code completion 6B-LLM with CPU and 4GB of RAM.
+  (2023-04-11, James Ravenscroft)
+  
 - [LMFlow](https://github.com/OptimalScale/LMFlow)
   An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
   (2023-04-06, OptimalScale)
