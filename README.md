@@ -28,6 +28,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Autonomous Agent Resources
 
+- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf)
+  (2023-04-07, Stanford and Google)
+
 - [Twitter List: Homebrew AGI Club](https://twitter.com/i/lists/1642934512836575232)
   (2023-04-06, [@altryne](https://twitter.com/altryne)]
 
