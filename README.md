@@ -1,6 +1,6 @@
 # awesome-decentralized-llm
 
-Collection of LLM resources that can be used to build products you can "own" or to perform reproducible research.
+Collection of LLM resources that can be used to build products you can "own" or to perform reproducible research. Please note there are Terms of Service around some of the weights and training data that should be investigated before commercialization.
 
 Remember [*not your model, not your product.*](https://twitter.com/imaurer/status/1642524451009880065?s=20).
 
