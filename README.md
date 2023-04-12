@@ -112,6 +112,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Edge LLM Spaces, Models & Datasets
 
+- [Dolly 15k Instruction Tuning Labels](https://github.com/databrickslabs/dolly/tree/master/data)
+  (2023-04-12, DataBricks, CC3 Allows Commercial Use)
+  
 - [Cerebras-GPT 7 Models](https://huggingface.co/cerebras)
   (2023-03-28, Huggingface, Cerebras, Apache License)
 
