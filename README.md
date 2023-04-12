@@ -47,6 +47,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
   (2023-03-10, Princeton & Google)
 
+- [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
+  (2023-04-11, Daniil A. Boiko,1 Robert MacKnight, and Gabe Gomes - Carnegie Mellon University)
+
 
 -----
 
