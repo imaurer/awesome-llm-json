@@ -27,6 +27,10 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
   JARVIS, a system to connect LLMs with ML community
   (2023-04-06, Microsoft)
 
+- [Autolang](https://github.com/alvarosevilla95/autolang) -
+  Based on BabyAGI, focused on workflows that complete. Powered by langchain.
+  (2023-04-10, Alvaro Sevilla)
+
 
 ### Autonomous Agent Resources
 
