@@ -65,7 +65,7 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Edge LLM Repositories
 
-- [TurboPilot](https://github.com/TabbyML/tabby)
+- [tabby](https://github.com/TabbyML/tabby)
   Self-hosted AI coding assistant.
   (2023-04-12, TabbyML)
 
