@@ -116,6 +116,10 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 - [RWKV-LM](https://github.com/BlinkDL/RWKV-LM) -
   RNN with Transformer-level LLM performance. Combines best of RNN and transformer: fast inference, saves VRAM, fast training.
   (2022?, PENG Bo, Apache License)
+  
+- [talkGPT4All](https://github.com/vra/talkGPT4All) -
+  A voice chatbot based on OpenAI Whisper and GPT4All, running on local laptop.
+  (2023-04-09, Yunfeng Wang, MIT License)
 
 
 ### Edge LLM Spaces, Models & Datasets
