@@ -26,6 +26,9 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Autonomous Agent Resources
 
+- [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
+  (2023-04-11, Daniil A. Boiko,1 Robert MacKnight, and Gabe Gomes - Carnegie Mellon University)
+
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf)
   (2023-04-07, Stanford and Google)
 
@@ -47,15 +50,16 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
   (2023-03-10, Princeton & Google)
 
-- [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
-  (2023-04-11, Daniil A. Boiko,1 Robert MacKnight, and Gabe Gomes - Carnegie Mellon University)
-
 
 -----
 
 ## Edge LLMs
 
 ### Edge LLM Repositories
+
+- [Basaran](https://github.com/hyperonym/basaran)
+  Open-source text completion API for Transformers-based text generation models.
+  (2023-04-12, Hyperonym)
 
 - [TurboPilot](https://github.com/ravenscroftj/turbopilot)
   CoPilot clone that runs code completion 6B-LLM with CPU and 4GB of RAM.
