@@ -11,6 +11,10 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
 
 ### Autonomous Agent Repositories
 
+- [AgentGPT](https://github.com/reworkd/AgentGPT) -
+  Assemble, configure, and deploy autonomous AI Agents in your browser.
+  (2023-04-12, Rework.ai)
+  
 - [babyagi](https://github.com/yoheinakajima/babyagi) -
   Python script example of AI-powered task management system. Uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. 
   (2023-04-06, Yohei Nakajima)
