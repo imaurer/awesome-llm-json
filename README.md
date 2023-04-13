@@ -77,6 +77,9 @@ Table of Contents:
 
 ### Local LLM Resources
 
+- [Databricks releases Dolly 2.0, the first open, instruction-following LLM for commercial use](https://venturebeat-com.cdn.ampproject.org/c/s/venturebeat.com/ai/databricks-releases-dolly-2-0-the-first-open-instruction-following-llm-for-commercial-use/amp/)
+  (2023-04-13, Venture Beat, Sharon Goldman)
+
 - [Summary of Curent Models](https://docs.google.com/spreadsheets/d/1O5KVQW1Hx5ZAkcg8AIRjbQLQzx2wVaLl0SqUu-ir9Fs/edit#gid=1158069878)
   (2023-04-11, Dr Alan D. Thompson, Google Sheet)
 
