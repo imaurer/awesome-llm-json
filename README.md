@@ -2,88 +2,19 @@
 
 Collection of LLM resources that can be used to build products you can "own" or to perform reproducible research. Please note there are Terms of Service around some of the weights and training data that should be investigated before commercialization.
 
-Currently collecting information on [Autonomous Agents](#autonomous-agents) and [Edge LLMs](#edge-llms), but will add new sections as the field evolves.
+Table of Contents:
 
------
-
-## Autonomous Agents
-
-
-### Autonomous Agent Repositories
-
-- [AgentGPT](https://github.com/reworkd/AgentGPT) -
-  Assemble, configure, and deploy autonomous AI Agents in your browser.
-  (2023-04-12, Rework.ai)
-  
-- [babyagi](https://github.com/yoheinakajima/babyagi) -
-  Python script example of AI-powered task management system. Uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. 
-  (2023-04-06, Yohei Nakajima)
-
-- [Auto-GPT](https://github.com/Torantulino/Auto-GPT) -
-  An experimental open-source attempt to make GPT-4 fully autonomous.
-  (2023-04-06, Toran Bruce Richards)
-
-- [JARVIS](https://github.com/microsoft/JARVIS) -
-  JARVIS, a system to connect LLMs with ML community
-  (2023-04-06, Microsoft)
-
-- [Autolang](https://github.com/alvarosevilla95/autolang) -
-  Based on BabyAGI, focused on workflows that complete. Powered by langchain.
-  (2023-04-10, Alvaro Sevilla)
-
-
-### Autonomous Agent Resources
-
-- [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
-  (2023-04-11, Daniil A. Boiko,1 Robert MacKnight, and Gabe Gomes - Carnegie Mellon University)
-
-- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf)
-  (2023-04-07, Stanford and Google)
-
-- [Twitter List: Homebrew AGI Club](https://twitter.com/i/lists/1642934512836575232)
-  (2023-04-06, [@altryne](https://twitter.com/altryne)]
-
-- [LangChain: Custom Agents](https://blog.langchain.dev/custom-agents/)
-  (2023-04-03, LangChain)
- 
-- [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
-  (2023-04-02, Microsoft)
-
-- [Introducing "🤖 Task-driven Autonomous Agent"](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20)
-  (2023-03-29, [@yoheinakajima](https://twitter.com/yoheinakajima))
-
-- [A simple Python implementation of the ReAct pattern for LLMs](https://til.simonwillison.net/llms/python-react-pattern)
-  (2023-03-17, Simon Willison)
-
-- [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
-  (2023-03-10, Princeton & Google)
+- [Local LLMs](#local-llms)
+- [LLM-based Tools](#llm-based-tools)
+- [Non-English Models](#non-english-models)
+- [Autonomous Agents](#autonomous-agents)
 
 
 -----
 
-## Edge LLMs
+## Local LLMs
 
-### Edge LLM Repositories
-
-- [tabby](https://github.com/TabbyML/tabby)
-  Self-hosted AI coding assistant.
-  (2023-04-12, TabbyML)
-
-- [Basaran](https://github.com/hyperonym/basaran)
-  Open-source text completion API for Transformers-based text generation models.
-  (2023-04-12, Hyperonym)
-
-- [TurboPilot](https://github.com/ravenscroftj/turbopilot)
-  CoPilot clone that runs code completion 6B-LLM with CPU and 4GB of RAM.
-  (2023-04-11, James Ravenscroft)
-  
-- [LMFlow](https://github.com/OptimalScale/LMFlow)
-  An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
-  (2023-04-06, OptimalScale)
-
-- [xturing](https://github.com/stochasticai/xturing) -
-  Build and control your own LLMs
-  (2023-04-03, stochastic.ai)
+### Local LLM Repositories
 
 - [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
   4 bits quantization of LLaMA using GPTQ
@@ -126,7 +57,7 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
   (2023-04-09, Yunfeng Wang, MIT License)
 
 
-### Edge LLM Spaces, Models & Datasets
+### Local LLM Spaces, Models & Datasets
 
 - [Dolly 15k Instruction Tuning Labels](https://github.com/databrickslabs/dolly/tree/master/data)
   (2023-04-12, DataBricks, CC3 Allows Commercial Use)
@@ -144,7 +75,7 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
   (Huggingface, Meta ToS/OpenAI ToS)
   
 
-### Edge LLM Resources
+### Local LLM Resources
 
 - [Summary of Curent Models](https://docs.google.com/spreadsheets/d/1O5KVQW1Hx5ZAkcg8AIRjbQLQzx2wVaLl0SqUu-ir9Fs/edit#gid=1158069878)
   (2023-04-11, Dr Alan D. Thompson, Google Sheet)
@@ -181,3 +112,98 @@ Currently collecting information on [Autonomous Agents](#autonomous-agents) and 
   
 - [Introducing LLaMA: A foundational, 65-billion-parameter large language model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)
   (2023-02-24, Meta AI, Meta ToS)
+
+-----
+
+## LLM-based Tools
+
+- [TextSynth](https://bellard.org/ts_server/)
+  REST API for Large Language Models. Supports variety of models.
+  (2023-04-13, Fabrice Bellard, Commercial License GPU/Shareware CPU)
+
+- [tabby](https://github.com/TabbyML/tabby)
+  Self-hosted AI coding assistant.
+  (2023-04-12, TabbyML)
+
+- [Basaran](https://github.com/hyperonym/basaran)
+  Open-source text completion API for Transformers-based text generation models.
+  (2023-04-12, Hyperonym)
+
+- [TurboPilot](https://github.com/ravenscroftj/turbopilot)
+  CoPilot clone that runs code completion 6B-LLM with CPU and 4GB of RAM.
+  (2023-04-11, James Ravenscroft)
+  
+- [LMFlow](https://github.com/OptimalScale/LMFlow)
+  An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
+  (2023-04-06, OptimalScale)
+
+- [xturing](https://github.com/stochasticai/xturing) -
+  Build and control your own LLMs
+  (2023-04-03, stochastic.ai)
+
+----
+
+## Non-English Models
+
+- [Polpaca](https://huggingface.co/mmosiolek/polpaca-lora-7b) -
+  Alpaca Speaks Polish
+  (2023-04-13, Leszek Bukowski)
+
+- [KOZA](https://github.com/bqpro1/koza)
+  KOZA is an instruct model for Polish language forked from alpaca-lora.
+  (2023-04-13, Marcin Mosiolek)
+  
+----
+
+## Autonomous Agents
+
+
+### Autonomous Agent Repositories
+
+- [AgentGPT](https://github.com/reworkd/AgentGPT) -
+  Assemble, configure, and deploy autonomous AI Agents in your browser.
+  (2023-04-12, Rework.ai)
+  
+- [babyagi](https://github.com/yoheinakajima/babyagi) -
+  Python script example of AI-powered task management system. Uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. 
+  (2023-04-06, Yohei Nakajima)
+
+- [Auto-GPT](https://github.com/Torantulino/Auto-GPT) -
+  An experimental open-source attempt to make GPT-4 fully autonomous.
+  (2023-04-06, Toran Bruce Richards)
+
+- [JARVIS](https://github.com/microsoft/JARVIS) -
+  JARVIS, a system to connect LLMs with ML community
+  (2023-04-06, Microsoft)
+
+- [Autolang](https://github.com/alvarosevilla95/autolang) -
+  Based on BabyAGI, focused on workflows that complete. Powered by langchain.
+  (2023-04-10, Alvaro Sevilla)
+
+### Autonomous Agent Resources
+
+- [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
+  (2023-04-11, Daniil A. Boiko,1 Robert MacKnight, and Gabe Gomes - Carnegie Mellon University)
+
+- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf)
+  (2023-04-07, Stanford and Google)
+
+- [Twitter List: Homebrew AGI Club](https://twitter.com/i/lists/1642934512836575232)
+  (2023-04-06, [@altryne](https://twitter.com/altryne)]
+
+- [LangChain: Custom Agents](https://blog.langchain.dev/custom-agents/)
+  (2023-04-03, LangChain)
+ 
+- [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
+  (2023-04-02, Microsoft)
+
+- [Introducing "🤖 Task-driven Autonomous Agent"](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20)
+  (2023-03-29, [@yoheinakajima](https://twitter.com/yoheinakajima))
+
+- [A simple Python implementation of the ReAct pattern for LLMs](https://til.simonwillison.net/llms/python-react-pattern)
+  (2023-03-17, Simon Willison)
+
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
+  (2023-03-10, Princeton & Google)
+
+
