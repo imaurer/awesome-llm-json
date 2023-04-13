@@ -18,8 +18,8 @@ Table of Contents:
 ### Local LLM Repositories
 
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
-  LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
-  (2023-03-28, Nomic AI, OpenAI ToS)
+  LLM trained with ~800k GPT-3.5-Turbo Generations based on GPT-J and LLaMa.
+  (2023-04-13, Nomic AI, Apache/Meta ToS/OpenAI ToS)
  
 - [Dolly](https://github.com/databrickslabs/dolly) -
   Large language model trained on the Databricks Machine Learning Platform
@@ -72,6 +72,9 @@ Table of Contents:
   
 
 ### Local LLM Resources
+
+- [GPT4All-J: An Apache-2 Licensed Assistant-Style Chatbot](https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf)
+  (2023-04-13, nomic.ai)
 
 - [Databricks releases Dolly 2.0, the first open, instruction-following LLM for commercial use](https://venturebeat-com.cdn.ampproject.org/c/s/venturebeat.com/ai/databricks-releases-dolly-2-0-the-first-open-instruction-following-llm-for-commercial-use/amp/)
   (2023-04-13, Venture Beat, Sharon Goldman)
