@@ -6,7 +6,7 @@ Table of Contents:
 
 - [Local LLMs](#local-llms)
 - [LLM-based Tools](#llm-based-tools)
-- [Quantized Models](#quantized-models)
+- [Training and Quantization](#training-and-quantization)
 - [Non-English Models](#non-english-models)
 - [Autonomous Agents](#autonomous-agents)
 
@@ -143,8 +143,12 @@ Table of Contents:
 
 ----
 
-## Quantized Models
+## Training and Quantization
 
+- [DeepSpeed](https://github.com/microsoft/DeepSpeed)
+  Deep learning optimization library that makes distributed training and inference easy.
+  (2023-04-13, Microsoft, Apache)
+  
 - [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
   4 bits quantization of LLaMA using GPTQ
   (2023-04-01, qwopqwop200, Meta ToS)
