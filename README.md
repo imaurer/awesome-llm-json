@@ -17,10 +17,6 @@ Table of Contents:
 
 ### Local LLM Repositories
 
-- [FastChat](https://github.com/lm-sys/FastChat) -
-  The release repo for Vicuna: An Open Chatbot Impressing GPT-4
-  (2023-04-13, LM-SYS, Apache)
-
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
   LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
   (2023-03-28, Nomic AI, OpenAI ToS)
@@ -126,6 +122,10 @@ Table of Contents:
 - [TextSynth](https://bellard.org/ts_server/)
   REST API for Large Language Models. Supports variety of models.
   (2023-04-13, Fabrice Bellard, Commercial License GPU/Shareware CPU)
+
+- [FastChat](https://github.com/lm-sys/FastChat) -
+  The release repo for Vicuna: An Open Chatbot Impressing GPT-4
+  (2023-04-13, LM-SYS, Apache)
 
 - [tabby](https://github.com/TabbyML/tabby)
   Self-hosted AI coding assistant.
