@@ -180,6 +180,10 @@ Table of Contents:
   Python script example of AI-powered task management system. Uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. 
   (2023-04-06, Yohei Nakajima)
 
+- [ChatArena](https://github.com/chatarena/chatarena) - 
+  Multi-Agent Language Game Environments for LLMs.
+  (2023-04-05, UCL)
+  
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT) -
   An experimental open-source attempt to make GPT-4 fully autonomous.
   (2023-04-06, Toran Bruce Richards)
