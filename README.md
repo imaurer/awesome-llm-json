@@ -6,6 +6,7 @@ Table of Contents:
 
 - [Local LLMs](#local-llms)
 - [LLM-based Tools](#llm-based-tools)
+- [Quantized Models](#quantized-models)
 - [Non-English Models](#non-english-models)
 - [Autonomous Agents](#autonomous-agents)
 
@@ -15,10 +16,6 @@ Table of Contents:
 ## Local LLMs
 
 ### Local LLM Repositories
-
-- [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
-  4 bits quantization of LLaMA using GPTQ
-  (2023-04-01, qwopqwop200, Meta ToS)
 
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
   LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
@@ -143,6 +140,18 @@ Table of Contents:
 - [xturing](https://github.com/stochasticai/xturing) -
   Build and control your own LLMs
   (2023-04-03, stochastic.ai)
+
+----
+
+## Quantized Models
+
+- [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
+  4 bits quantization of LLaMA using GPTQ
+  (2023-04-01, qwopqwop200, Meta ToS)
+
+- [GPTQ](https://github.com/IST-DASLab/gptq)
+  Code for the ICLR 2023 paper "GPTQ: Accurate Post-training Quantization of Generative Pretrained Transformers".
+  (2023-03-22, IST Austria Distributed Algorithms and Systems Lab)
 
 ----
 
