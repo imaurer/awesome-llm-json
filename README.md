@@ -176,6 +176,10 @@ Table of Contents:
 
 ### Autonomous Agent Repositories
 
+- [AI Legion](https://github.com/eumemic/ai-legion) -
+  JS/TS framework for autonomous agents who can work together to accomplish tasks.
+  (2023-04-13, eumemic, MIT)
+
 - [AgentGPT](https://github.com/reworkd/AgentGPT) -
   Assemble, configure, and deploy autonomous AI Agents in your browser.
   (2023-04-12, Rework.ai)
