@@ -159,11 +159,11 @@ Table of Contents:
 
 - [Polpaca](https://huggingface.co/mmosiolek/polpaca-lora-7b) -
   Alpaca Speaks Polish
-  (2023-04-13, Leszek Bukowski)
+  (2023-04-13, Marcin Mosiolek)
 
 - [KOZA](https://github.com/bqpro1/koza)
   KOZA is an instruct model for Polish language forked from alpaca-lora.
-  (2023-04-13, Marcin Mosiolek)
+  (2023-04-13, Leszek Bukowski)
   
 ----
 
