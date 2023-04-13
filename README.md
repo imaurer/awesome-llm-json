@@ -17,6 +17,10 @@ Table of Contents:
 
 ### Local LLM Repositories
 
+- [FastChat](https://github.com/lm-sys/FastChat) -
+  The release repo for Vicuna: An Open Chatbot Impressing GPT-4
+  (2023-04-13, LM-SYS, Apache)
+
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
   LLM trained with ~800k GPT-3.5-Turbo Generations based on LLaMa.
   (2023-03-28, Nomic AI, OpenAI ToS)
@@ -52,6 +56,9 @@ Table of Contents:
 
 ### Local LLM Spaces, Models & Datasets
 
+- [Vicuna 13b](https://huggingface.co/lmsys/vicuna-13b-delta-v1.1)
+  (2023-04-12, [@lmsysorg](https://twitter.com/lmsysorg))
+
 - [Dolly 15k Instruction Tuning Labels](https://github.com/databrickslabs/dolly/tree/master/data)
   (2023-04-12, DataBricks, CC3 Allows Commercial Use)
   
@@ -78,6 +85,9 @@ Table of Contents:
 
 - [Running GPT4All On a Mac Using Python langchain in a Jupyter Notebook](https://blog.ouseful.info/2023/04/04/running-gpt4all-on-a-mac-using-python-langchain-in-a-jupyter-notebook/)
   (2023-04-04, Tony Hirst, Blog Post)
+
+- [Vicuna Homepage](https://vicuna.lmsys.org/)
+  (2023-04-01, Meta ToS)
 
 - [Cerebras-GPT vs LLaMA AI Model Comparison](https://www.lunasec.io/docs/blog/cerebras-gpt-vs-llama-ai-model-comparison/)
   (2023-03-29, LunaSec, Blog Post)
