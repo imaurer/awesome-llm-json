@@ -48,10 +48,6 @@ Table of Contents:
 - [RWKV-LM](https://github.com/BlinkDL/RWKV-LM) -
   RNN with Transformer-level LLM performance. Combines best of RNN and transformer: fast inference, saves VRAM, fast training.
   (2022?, PENG Bo, Apache License)
-  
-- [talkGPT4All](https://github.com/vra/talkGPT4All) -
-  A voice chatbot based on OpenAI Whisper and GPT4All, running on local laptop.
-  (2023-04-09, Yunfeng Wang, MIT License)
 
 
 ### Local LLM Spaces, Models & Datasets
@@ -132,7 +128,11 @@ Table of Contents:
 - [TurboPilot](https://github.com/ravenscroftj/turbopilot)
   CoPilot clone that runs code completion 6B-LLM with CPU and 4GB of RAM.
   (2023-04-11, James Ravenscroft)
-  
+
+- [talkGPT4All](https://github.com/vra/talkGPT4All) -
+  A voice chatbot based on OpenAI Whisper and GPT4All, running on local laptop.
+  (2023-04-09, Yunfeng Wang, MIT License)
+
 - [LMFlow](https://github.com/OptimalScale/LMFlow)
   An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
   (2023-04-06, OptimalScale)
