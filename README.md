@@ -233,6 +233,8 @@ Table of Contents:
  
 - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
   (2023-04-02, Microsoft)
+  
+- [Introducing Agents in Haystack: Make LLMs resolve complex tasks](https://haystack.deepset.ai/blog/introducing-haystack-agents) (2023-03-30, Haystack and Deepset)
 
 - [Introducing "🤖 Task-driven Autonomous Agent"](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20)
   (2023-03-29, [@yoheinakajima](https://twitter.com/yoheinakajima))
