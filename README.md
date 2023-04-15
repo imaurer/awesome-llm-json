@@ -122,6 +122,10 @@ Table of Contents:
 
 ## LLM-based Tools
 
+- [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
+  A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, Pythia, OPT, and GALACTICA.
+  (2023-04-15, oobabooga, AGPL)
+
 - [TextSynth](https://bellard.org/ts_server/)
   REST API for Large Language Models. Supports variety of models.
   (2023-04-13, Fabrice Bellard, Commercial License GPU/Shareware CPU)
