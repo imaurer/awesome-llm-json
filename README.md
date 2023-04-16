@@ -154,10 +154,6 @@ Table of Contents:
   An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
   (2023-04-06, OptimalScale)
 
-- [xturing](https://github.com/stochasticai/xturing) -
-  Build and control your own LLMs
-  (2023-04-03, stochastic.ai)
-
 ----
 
 ## Training and Quantization
@@ -165,6 +161,10 @@ Table of Contents:
 - [DeepSpeed](https://github.com/microsoft/DeepSpeed)
   Deep learning optimization library that makes distributed training and inference easy.
   (2023-04-13, Microsoft, Apache)
+  
+- [ColossalAI](https://github.com/hpcaitech/ColossalAI)
+  Making large AI models cheaper, faster and more accessible
+  (2023-04-16, HPC-AI, Apache)
   
 - [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
   4 bits quantization of LLaMA using GPTQ
@@ -174,6 +174,14 @@ Table of Contents:
   Code for the ICLR 2023 paper "GPTQ: Accurate Post-training Quantization of Generative Pretrained Transformers".
   (2023-03-22, IST Austria Distributed Algorithms and Systems Lab)
 
+- [xturing](https://github.com/stochasticai/xturing) -
+  Build and control your own LLMs
+  (2023-04-03, stochastic.ai)
+  
+- [spaCy](https://github.com/explosion/spaCy)
+  💫 Industrial-strength Natural Language Processing (NLP) in Python 
+  (2023-04-16, Explosion.ai, MIT)
+    
 ----
 
 ## Non-English Models
@@ -185,6 +193,18 @@ Table of Contents:
 - [KOZA](https://github.com/bqpro1/koza)
   KOZA is an instruct model for Polish language forked from alpaca-lora.
   (2023-04-13, Leszek Bukowski)
+  
+----
+
+## LLM Technology for app integration
+
+- [semantic-kernel](https://github.com/microsoft/semantic-kernel)
+  Integrate cutting-edge LLM technology quickly and easily into your apps
+  (2023-04-16, Microsoft)
+  
+- [LangChain](https://github.com/hwchase17/langchain)
+  ⚡ Building applications with LLMs through composability ⚡
+  (2023-04-16, Langchain)
   
 ----
 
@@ -249,4 +269,9 @@ Table of Contents:
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
   (2023-03-10, Princeton & Google)
 
+----
 
+## Prompting Tools
+
+- [Aim 💫 — An easy-to-use & supercharged open-source AI metadata tracker (experiment tracking, prompt engineering)](https://github.com/aimhubio/aim)
+  (2023-04-16, [AimStack](https://aimstack.io/)
