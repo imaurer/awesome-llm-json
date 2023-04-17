@@ -53,6 +53,9 @@ Table of Contents:
 
 ### Local LLM Spaces, Models & Datasets
 
+- [RedPajama-Data-1T](https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T)
+  (2023-04-17, [@togethercompute](https://twitter.com/togethercompute))
+
 - [Vicuna 13b](https://huggingface.co/lmsys/vicuna-13b-delta-v1.1)
   (2023-04-12, [@lmsysorg](https://twitter.com/lmsysorg))
 
@@ -73,6 +76,9 @@ Table of Contents:
   
 
 ### Local LLM Resources
+
+- [What’s in the RedPajama-Data-1T LLM training set](https://simonwillison.net/2023/Apr/17/redpajama-data/)
+  (2023-04-17, Simon Willison, Blog Post)
 
 - [GPT4All-J: An Apache-2 Licensed Assistant-Style Chatbot](https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf)
   (2023-04-13, nomic.ai)
