@@ -134,6 +134,7 @@ Table of Contents:
 
 - [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
   Enhancing Vision-language Understanding with Advanced Large Language Models
+  (2023-04-17, Vision CAIR Research Group, KAUST, BSD)
 
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
   A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, Pythia, OPT, and GALACTICA.
