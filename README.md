@@ -49,6 +49,7 @@ Table of Contents:
   RNN with Transformer-level LLM performance. Combines best of RNN and transformer: fast inference, saves VRAM, fast training.
   (2022?, PENG Bo, Apache License)
 
+- [Open Assistant](https://open-assistant.io/) - A chat-based ChatGPT-like large language model. (2023-04-15, Pythia, LLAMA, Apache 2.0 License)
 
 ### Local LLM Spaces, Models & Datasets
 
