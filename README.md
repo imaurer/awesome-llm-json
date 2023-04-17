@@ -176,7 +176,7 @@ Table of Contents:
 
 ----
 
-## Non-English Models
+## Non-English Models & Datasets
 
 - [Polpaca](https://huggingface.co/mmosiolek/polpaca-lora-7b) -
   Alpaca Speaks Polish
@@ -185,6 +185,8 @@ Table of Contents:
 - [KOZA](https://github.com/bqpro1/koza)
   KOZA is an instruct model for Polish language forked from alpaca-lora.
   (2023-04-13, Leszek Bukowski)
+  
+- [Owca](https://github.com/Emplocity/owca) is a Polish-translated dataset of instructions for fine-tuning the Alpaca model (2023-04-13, Emplocity)
   
 ----
 
