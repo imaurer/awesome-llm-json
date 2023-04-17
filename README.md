@@ -82,7 +82,7 @@ Table of Contents:
 
 - [What’s in the RedPajama-Data-1T LLM training set](https://simonwillison.net/2023/Apr/17/redpajama-data/)
   (2023-04-17, Simon Willison, Blog Post)
-
+  
 - [GPT4All-J: An Apache-2 Licensed Assistant-Style Chatbot](https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf)
   (2023-04-13, nomic.ai)
 
@@ -163,6 +163,10 @@ Table of Contents:
 - [talkGPT4All](https://github.com/vra/talkGPT4All) -
   A voice chatbot based on OpenAI Whisper and GPT4All, running on local laptop.
   (2023-04-09, Yunfeng Wang, MIT License)
+
+- [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo)
+  Data, models, and evaluation benchmark for large language models
+  (2023-04-08, FreedomIntelligence, Apache)
 
 - [LMFlow](https://github.com/OptimalScale/LMFlow)
   An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
