@@ -77,6 +77,9 @@ Table of Contents:
 
 ### Local LLM Resources
 
+- [RedPajama reproduces LLaMA training dataset of over 1.2 trillion tokens](https://www.together.xyz/blog/redpajama)
+  (2023-04-17, Together, Blog Post)
+
 - [What’s in the RedPajama-Data-1T LLM training set](https://simonwillison.net/2023/Apr/17/redpajama-data/)
   (2023-04-17, Simon Willison, Blog Post)
 
@@ -128,6 +131,9 @@ Table of Contents:
 -----
 
 ## LLM-based Tools
+
+- [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
+  Enhancing Vision-language Understanding with Advanced Large Language Models
 
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
   A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, Pythia, OPT, and GALACTICA.
