@@ -17,6 +17,10 @@ Table of Contents:
 
 ### Local LLM Repositories
 
+- [StabilityLM](https://github.com/stability-AI/stableLM/) -
+  Stability AI Language Models
+  (2023-04-19, StabilityAI, Apache and CC BY-SA-4.0)
+
 - [GPT4All](https://github.com/nomic-ai/gpt4all) -
   LLM trained with ~800k GPT-3.5-Turbo Generations based on GPT-J and LLaMa.
   (2023-04-13, Nomic AI, Apache/Meta ToS/OpenAI ToS)
