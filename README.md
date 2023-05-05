@@ -17,6 +17,10 @@ Table of Contents:
 
 ### Local LLM Repositories
 
+- [LLM Foundry](https://github.com/mosaicml/llm-foundry)
+  Release repo for MPT-7B and related models.
+  (2023-05-05, MosaicML, Apache 2.0)
+
 - [FastChat](https://github.com/lm-sys/FastChat)
   Release repo for Vicuna and FastChat-T5
   (2023-04-20, LMSYS, Apache 2.0)
@@ -84,6 +88,9 @@ Table of Contents:
   
 
 ### Local LLM Resources
+
+- [Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs](https://www.mosaicml.com/blog/mpt-7b)
+  (2023-05-05, MosaicML, Blog Post)
 
 - [Google "We Have No Moat, And Neither Does OpenAI"](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither)
   (2023-05-04, Leaked Internal Google Document)
