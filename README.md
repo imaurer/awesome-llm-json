@@ -81,6 +81,9 @@ Table of Contents:
 
 ### Local LLM Resources
 
+- [Google "We Have No Moat, And Neither Does OpenAI"](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither)
+  (2023-05-04, Leaked Internal Google Document)
+
 - [RedPajama reproduces LLaMA training dataset of over 1.2 trillion tokens](https://www.together.xyz/blog/redpajama)
   (2023-04-17, Together, Blog Post)
 
