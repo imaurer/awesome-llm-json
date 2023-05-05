@@ -17,6 +17,10 @@ Table of Contents:
 
 ### Local LLM Repositories
 
+- [FastChat](https://github.com/lm-sys/FastChat)
+  Release repo for Vicuna and FastChat-T5
+  (2023-04-20, LMSYS, Apache 2.0)
+
 - [StabilityLM](https://github.com/stability-AI/stableLM/) -
   Stability AI Language Models
   (2023-04-19, StabilityAI, Apache and CC BY-SA-4.0)
