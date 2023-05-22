@@ -4,6 +4,7 @@ Collection of LLM resources that can be used to build products you can "own" or 
 
 Table of Contents:
 
+- [Start Here](#start-here)
 - [Local LLMs](#local-llms)
 - [LLM-based Tools](#llm-based-tools)
 - [Training and Quantization](#training-and-quantization)
@@ -11,6 +12,16 @@ Table of Contents:
 - [Autonomous Agents](#autonomous-agents)
 
 
+-----
+
+## Start Here
+
+This website looks like it replaces the purpose of this repo. I will be monitoring, if it fulfills the premise and remains active I will archive this repo.
+
+- [HuggingFace Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+  The 🤗 Open LLM Leaderboard aims to track, rank and evaluate LLMs and chatbots as they are released.
+  (2023-05-23, HuggingFace)
+  
 -----
 
 ## Local LLMs
