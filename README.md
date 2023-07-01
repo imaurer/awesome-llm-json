@@ -4,7 +4,7 @@ Collection of LLM resources that can be used to build products you can "own" or 
 
 Table of Contents:
 
-- [Start Here](#start-here)
+- [Leaderboards](#leaderboards)
 - [Local LLMs](#local-llms)
 - [LLM-based Tools](#llm-based-tools)
 - [Training and Quantization](#training-and-quantization)
