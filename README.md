@@ -14,13 +14,21 @@ Table of Contents:
 
 -----
 
-## Start Here
+## Leaderboards
 
-This website looks like it replaces the purpose of this repo. I will be monitoring, if it fulfills the premise and remains active I will archive this repo.
+I am having a hard time keeping up with the latest and greatest open-source LLMs. Below are leaderboards I am checking periodically:
 
 - [HuggingFace Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
   The 🤗 Open LLM Leaderboard aims to track, rank and evaluate LLMs and chatbots as they are released.
   (2023-05-23, HuggingFace)
+
+- [AlpacaEval 🦙 Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)
+  An Automatic Evaluator for Instruction-following Language Models
+  (2023-07-01, Stanford Alpaca/Tatsu Lab)
+
+- [Code Generation on HumanEval](https://paperswithcode.com/sota/code-generation-on-humaneval)
+  HumanEval problem solving dataset described in the paper "Evaluating Large Language Models Trained on Code"
+  (2023-07-01, Papers With Code)
   
 -----
 
