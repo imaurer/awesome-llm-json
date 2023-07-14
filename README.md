@@ -11,6 +11,8 @@ Table of Contents:
 - [Non-English Models](#non-english-models)
 - [Autonomous Agents](#autonomous-agents)
 
+If you are looking for a list of open-source LLMs that can be used commercially, this is a great list:
+[Open LLMs](https://github.com/eugeneyan/open-llms)
 
 -----
 
