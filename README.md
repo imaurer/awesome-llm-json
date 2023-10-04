@@ -171,6 +171,10 @@ I am having a hard time keeping up with the latest and greatest open-source LLMs
 
 ## LLM-based Tools
 
+- [xTuring](https://github.com/stochasticai/xturing) -
+  This tool allows for the fine-tuning of language models either on your personal computer or in the cloud, all while minimizing GPU costs.
+  (2023-10-05, stochastic.ai)
+
 - [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
   Enhancing Vision-language Understanding with Advanced Large Language Models
   (2023-04-17, Vision CAIR Research Group, KAUST, BSD)
@@ -210,10 +214,6 @@ I am having a hard time keeping up with the latest and greatest open-source LLMs
 - [LMFlow](https://github.com/OptimalScale/LMFlow)
   An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
   (2023-04-06, OptimalScale)
-
-- [xturing](https://github.com/stochasticai/xturing) -
-  Build and control your own LLMs
-  (2023-04-03, stochastic.ai)
 
 ----
 
