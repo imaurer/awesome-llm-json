@@ -300,6 +300,10 @@ I am having a hard time keeping up with the latest and greatest open-source LLMs
   Based on BabyAGI, focused on workflows that complete. Powered by langchain.
   (2023-04-10, Alvaro Sevilla)
 
+- [Embedchain](https://github.com/embedchain/embedchain) -
+  Framework to create ChatGPT like bots over your dataset.
+  (2023-07-19, Embedchain)
+
 ### Autonomous Agent Resources
 
 - [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
