@@ -75,9 +75,9 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [Instructor](https://github.com/JasonLiu-DL/instructor) (MIT) is a Python library that simplifies generating structured data like JSON from Large Language Models (LLMs) using Function Calling, Tool Calling, and constrained sampling modes like JSON mode and JSON Schema. Built on top of Pydantic, Instructor offers a user-friendly API for managing validation context, retries, and streaming responses. It supports various LLMs, including GPT-3.5, GPT-4, GPT-4-Vision, and open-source models like Mistral, Ollama, and llama-cpp-python.
 
-[🚅 LiteLLM](https://github.com/BerriAI/litellm) (MIT) is a Python library that simplifies calling 100+ LLMs in the OpenAI format. It supports [function calling](https://docs.litellm.ai/docs/completion/function_call), tool calling and JSON mode across multiple LLMs (OpenAI, VertexAI, Anthropic, Ollama etc.).  
-
 [LangChain](https://github.com/langchain-ai/langchain) (MIT) provides an interface for chains, integrations with other tools, and chains for applications. LangChain offers [chains for structured outputs](https://python.langchain.com/docs/guides/structured_output) and [function calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling) across models.
+
+[LiteLLM](https://github.com/BerriAI/litellm) (MIT) is a Python library that simplifies calling 100+ LLMs in the OpenAI format. It supports [function calling](https://docs.litellm.ai/docs/completion/function_call), tool calling and JSON mode across multiple LLMs (OpenAI, VertexAI, Anthropic, Ollama etc.).
 
 [LlamaIndex](https://github.com/run-llama/llama_index) (MIT) provides a suite of tools for structuring data, loading indices, and querying those indices with LLMs to obtain structured outputs. LlamaIndex provides [modules for structured outputs](https://docs.llamaindex.ai/en/stable/module_guides/querying/structured_outputs/structured_outputs.html) at different levels of abstraction, including output parsers for text completion endpoints, [Pydantic programs](https://docs.llamaindex.ai/en/stable/module_guides/querying/structured_outputs/pydantic_program.html) for mapping prompts to structured outputs using function calling or output parsing, and pre-defined Pydantic programs for specific output types.
 
