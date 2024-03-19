@@ -135,6 +135,10 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [chatgpt-structured-data](https://github.com/minimaxir/chatgpt-structured-data) by [Max Woolf](https://twitter.com/minimaxir) provides demos showcasing ChatGPT's function calling and structured data support, covering various use cases and schemas.## Leaderboards
 
+[Function Calling with Claude](https://github.com/anthropics/anthropic-cookbook/blob/main/function_calling/function_calling.ipynb) by Anthropic 
+
+
+
 ## Leaderboards
 
 [Berkeley Function-Calling Leaderboard (BFCL)](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html) is an evaluation framework for LLMs' function-calling capabilities including over 2k question-function-answer pairs across languages like Python, Java, JavaScript, SQL, and REST API, focusing on simple, multiple, and parallel function calls, as well as function relevance detection.
