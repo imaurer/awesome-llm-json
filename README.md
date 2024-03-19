@@ -58,6 +58,8 @@ Below is a list of hosted API models that support multiple parallel function cal
  
 ## Local Models
 
+[Hermes 2 Pro - Mistral 7B](https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B) (2024-03-13, Nous Research) is a 7B parameter model that excels at function calling, JSON structured outputs, and general tasks. Trained on an updated OpenHermes 2.5 Dataset and a new function calling dataset, it uses a special system prompt and multi-turn structure. Achieves 91% on function calling and 84% on JSON mode evaluations.
+
 [Gorilla OpenFunctions v2](https://gorilla.cs.berkeley.edu//blogs/7_open_functions_v2.html) (2024-02-27, Apache 2.0 license, [Charlie Cheng-Jie Ji et al.](https://gorilla.cs.berkeley.edu//blogs/7_open_functions_v2.html))  interprets and executes functions based on JSON Schema Objects, supporting multiple languages and detecting function relevance.
 
 [NexusRaven-V2](https://nexusflow.ai/blogs/ravenv2) (2023-12-05, Nexusflow)  is a 13B model outperforming GPT-4 in zero-shot function calling by up to 7%, enabling effective use of software tools. Further instruction-tuned on CodeLlama-13B-instruct.
