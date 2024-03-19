@@ -1,0 +1,86 @@
+[project]
+name = "awesome_llm_❤️_json"
+description = "Collection of awesome resources that show LLMs truly love JSON"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Ian Maurer", email = "ian@genomoncology.com" },
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "pydantic >= 2.6.1",
+    "ipython",
+    "jupyter",
+    "pip",
+    "setuptools",
+    "pytest",
+]
+dynamic = ["version"]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+]
+xfail_strict = true
+junit_family = "xunit2"
+norecursedirs = ".venv"
+filterwarnings = [
+]
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "src",
+]
+context = '${CONTEXT}'
+omit = [
+    '__main__.py',
+    '__init__.py',
+]
+
+[tool.ruff]
+line-length = 79
+select = [
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "I",  # isort
+  "C",  # flake8-comprehensions
+  "B",  # flake8-bugbear
+]
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "except ImportError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[tool.ruff.isort]
+known-third-party = ["pydantic"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.isort]
+extend_skip = ["__init__.py"]
