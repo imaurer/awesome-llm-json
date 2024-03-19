@@ -112,6 +112,7 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 ## Videos
 
+[Hermes 2 Pro Overview](https://www.youtube.com/watch?v=ViXURxck-HM) (2024-03-18, Prompt Engineer)  introduces Hermes 2 Pro, a 7B parameter model excelling at function calling and structured JSON output. Demonstrates 90% accuracy in function calling and 84% in JSON mode, outperforming other models.
 
 [Mistral AI Function Calling](https://www.youtube.com/watch?v=eOo4GfHj3ZE) (2024-02-24, Sophia Yang) demonstrates connecting LLMs to external tools, generating function arguments, and executing functions. Could be extended to generate or manipulate JSON data.
 
