@@ -100,6 +100,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [FU, Show Me The Prompt. Quickly understand inscrutable LLM frameworks by intercepting API calls](https://hamel.dev/blog/posts/prompt/) (2023-02-14, Hamel Husain) provides a practical guide to intercepting API calls using mitmproxy, gaining insights into tool functionality, and assessing necessity. Emphasizes minimizing complexity and maintaining close connection with underlying LLMs.
 
+[Coalescence: making LLM inference 5x faster](https://blog.dottxt.co/coalescence.html) (2024-02-02, .txt Engineering) shows how structured generation can be made faster than unstructured generation using a technique called "coalescence", with a caveat regarding how it may affect the quality of the generation.
+
 [Getting Started with Function Calling](https://www.promptingguide.ai/applications/function_calling) (2024-01-11, Elvis Saravia) introduces function calling for connecting LLMs with external tools and APIs, providing an example using OpenAI's API and highlighting potential applications.
 
 [Pushing ChatGPT's Structured Data Support To Its Limits](https://minimaxir.com/2023/12/chatgpt-structured-data/) (2023-12-21, Max Woolf) delves into leveraging ChatGPT's capabilities using paid API, JSON schemas, and Pydantic. Highlights techniques for improving output quality and the benefits of structured data support.
