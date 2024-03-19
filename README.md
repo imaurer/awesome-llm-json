@@ -1,344 +1,135 @@
-# awesome-decentralized-llm
+This awesome list is dedicated to resources for using Large Language Models (LLMs) to generate JSON or other structured outputs.
+  
+## Table of Contents  
+  
+* [Terminology](#terminology)  
+* [Hosted Models](#hosted-models)
+* [Local Models](#local-models)
+* [Python Libraries](#python-libraries)
+* [Blog Articles](#blog-articles)
+* [Videos](#videos) 
+* [Jupyter Notebooks](#jupyter-notebooks)
+* [Leaderboards](#leaderboards)
+  
+## Terminology  
+  
+Unfortunately, generating JSON goes by a few different names that roughly mean the same thing:  
+  
+* Structured Outputs: Using an LLM to generate any structured output including JSON, XML, or YAML regardless of technique (e.g. function calling, guided generation).
+* [Function Calling](https://www.promptingguide.ai/applications/function_calling): Providing an LLM a hypothetical (or actual) function definition for it to "call" in it's chat or completion response. The LLM doesn't actually call the function, it just provides an indication that one should be called via a JSON message.
+* [JSON Mode](https://platform.openai.com/docs/guides/text-generation/json-mode): Specifying that an LLM must generate valid JSON. Depending on the provider, a schema may or may not be specified and the LLM may create an unexpected schema.
+* [Tool Usage](https://python.langchain.com/docs/modules/agents/agent_types/openai_tools): Giving an LLM a choice of tools such as image generation, web search, and "function calling".  The functional calling parameter in the API request is now called "tools".
+* [Guided Generation](https://arxiv.org/abs/2307.09702): For constraining an LLM model to generate text that follows a prescribed specification such as a [Context-Free Grammar](https://en.wikipedia.org/wiki/Context-free_grammar).
+* [GPT Actions](https://platform.openai.com/docs/actions/introduction): ChatGPT invokes actions (i.e. API calls) based on the endpoints and parameters specified in an [OpenAPI specification](https://swagger.io/specification/). Unlike the capability called "Function Calling", this capability will indeed call your function hosted by an API server.
 
-Collection of LLM resources that can be used to build products you can "own" or to perform reproducible research. Please note there are Terms of Service around some of the weights and training data that should be investigated before commercialization.
+None of these names are great, that's why I named this list just "Awesome LLM JSON".
+  
+## Hosted Models
 
-Table of Contents:
+This is a list of known Hosted API providers that support Function Calling in alphabetical order.
 
-- [Leaderboards](#leaderboards)
-- [Local LLMs](#local-llms)
-- [LLM-based Tools](#llm-based-tools)
-- [Training and Quantization](#training-and-quantization)
-- [Non-English Models](#non-english-models)
-- [Autonomous Agents](#autonomous-agents)
+| Provider     | Models                                                                                                                                                                                                          | Links                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AnyScale     | Mistral-7B-Instruct-v0.1<br>Mixtral-8x7B-Instruct-v0.1                                                                                                                                                          | [Function Calling](https://docs.endpoints.anyscale.com/text-generation/function-calling)<br>[JSON Mode](https://docs.endpoints.anyscale.com/text-generation/json-mode)<br>[Pricing](https://docs.endpoints.anyscale.com/pricing/)<br>[Announcement (2023)](https://www.anyscale.com/blog/anyscale-endpoints-json-mode-and-function-calling-features)                                                                                     |
+| Azure        | gpt-4-0125-preview<br>gpt-4-1106-preview<br>gpt-4-0613<br>gpt-4<br>gpt-4-turbo<br>gpt-35-turbo-16k-0613<br>gpt-35-turbo-1106<br>gpt-35-turbo-0125<br>gpt-35-turbo<br>mistral-large-latest<br>mistral-large-2402 | [Function Calling](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling?tabs=python)<br>[OpenAI Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/#pricing)<br>[Mistral Pricing](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/000-000.mistral-ai-large-offer?tab=PlansAndPrice)                                                                |
+| Cohere       | Command-R                                                                                                                                                                                                       | [Function Calling](https://docs.cohere.com/docs/tool-use)<br>[Pricing](https://cohere.com/pricing)<br>[Announcement (2024-03-11)](https://txt.cohere.com/command-r/)                                                                                                                                                                                                                                                                     |
+| Fireworks.ai | firefunction-v1                                                                                                                                                                                                 | [Function Calling](https://readme.fireworks.ai/docs/function-calling)<br>[JSON Mode](https://readme.fireworks.ai/docs/structured-response-formatting)<br>[Grammar mode](https://readme.fireworks.ai/docs/structured-output-grammar-based)<br>[Pricing](https://fireworks.ai/pricing)<br>[Announcement (2023-12-20)](https://blog.fireworks.ai/fireworks-raises-the-quality-bar-with-function-calling-model-and-api-release-e7f49d1e98e9) |
+| Google       | gemini-1.0-pro                                                                                                                                                                                                  | [Function Calling](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/function-calling#rest)<br>[Pricing](https://ai.google.dev/pricing?authuser=1)                                                                                                                                                                                                                                                                        |
+| Mistral      | mistral-large-latest                                                                                                                                                                                            | [Function Calling](https://docs.mistral.ai/guides/function-calling/)<br>[Pricing](https://docs.mistral.ai/platform/pricing/)                                                                                                                                                                                                                                                                                                             |
+| OpenAI       | gpt-4<br>gpt-4-turbo-preview<br>gpt-4-0613<br>gpt-4-1106-preview<br>gpt-4-0125-preview<br>gpt-3.5-turbo<br>gpt-3.5-turbo-0613<br>gpt-3.5-turbo-1106<br>gpt-3.5-turbo-0125                                       | [Function Calling](https://openai.com/blog/openai-api/)<br>[JSON Mode](https://platform.openai.com/docs/guides/text-generation/json-mode)<br>[Pricing](https://openai.com/pricing)<br>[Announcement (2023-06-13)](https://openai.com/blog/function-calling-and-other-api-updates)                                                                                                                                                        |
+| Together AI  | Mixtral-8x7B-Instruct-v0.1<br>Mistral-7B-Instruct-v0.1<br>CodeLlama-34b-Instruct                                                                                                                                | [Function Calling](https://docs.together.ai/docs/function-calling)<br>[JSON Mode](https://docs.together.ai/docs/json-mode)<br>[Pricing](https://together.ai/pricing/)<br>[Announcement 2024-01-31](https://www.together.ai/blog/function-calling-json-mode)                                                                                                                                                                              |
 
-If you are looking for a list of open-source LLMs that can be used commercially, this is a great list:
-[Open LLMs](https://github.com/eugeneyan/open-llms)
+**Parallel Function Calling**
 
------
+Below is a list of hosted API models that support multiple parallel function calls. This could include checking the weather in multiple cities or first finding the location of a hotel and then checking the weather at it's location.
+
+- azure/openai
+	- gpt-4-turbo-preview
+	- gpt-4-1106-preview
+	- gpt-4-0125-preview
+	- gpt-3.5-turbo-1106
+	- gpt-3.5-turbo-0125
+- cohere
+	- command-r
+- together_ai
+	- Mixtral-8x7B-Instruct-v0.1
+	- Mistral-7B-Instruct-v0.1
+	- CodeLlama-34b-Instruct
+ 
+## Local Models
+
+[Gorilla OpenFunctions v2](https://gorilla.cs.berkeley.edu//blogs/7_open_functions_v2.html) (2024-02-27, Apache 2.0 license, [Charlie Cheng-Jie Ji et al.](https://gorilla.cs.berkeley.edu//blogs/7_open_functions_v2.html)) is an open-source language model that interprets and executes functions or plugins, handling parallel or serial function calls based on JSON Schema Objects. It supports multiple programming languages (Python, Java, JavaScript, and REST API) and detects function relevance.
+
+[NexusRaven-V2](https://nexusflow.ai/blogs/ravenv2) (2023-12-05, Nexusflow) is an open-source 13B language model that outperforms GPT-4 in zero-shot function calling, enabling copilots and agents to use software tools effectively. It surpasses GPT-4 by up to 7% in function calling success rates for human-generated use cases involving nested and composite functions, despite never being trained on the evaluation functions. The model is further instruction-tuned on Meta's CodeLlama-13B-instruct using curated data from open-code corpora.
+
+[Functionary](https://functionary.meetkai.com/) (2023-08-04, [MeetKai](https://meetkai.com/)) interprets and executes functions or plugins, handling parallel or serial function calls based on JSON Schema Objects. It offers models with varying compute requirements, supporting single, parallel, and nested function calls, as well as multi-turn conversations. Compatible with OpenAI-python and llama-cpp-python, Functionary enables developers to efficiently execute functions within JSON generation tasks, making it a versatile tool for a wide range of applications.
+
+## Python Libraries
+
+
+[DSPy](https://github.com/stanfordnlp/dspy/) (MIT License) is a framework for algorithmically optimizing LM prompts and weights, especially when LMs are used one or more times within a pipeline. It separates the flow of your program (`modules`) from the parameters (LM prompts and weights) of each step and introduces new `optimizers`, which are LM-driven algorithms that can tune the prompts and/or weights of your LM calls, given a `metric` you want to maximize. DSPy introduced [typed predictor and signatures](https://github.com/stanfordnlp/dspy/blob/main/docs/docs/building-blocks/8-typed_predictors.md) to leverage Pydantic for enforcing type constraints on inputs and outputs, improving upon string-based fields. This feature streamlines the generation of accurate and type-safe function calls, supports decorator usage, and integrates with DSPy's pipeline composition. Typed Predictors can be optimized using the provided optimizer, enhancing the functionality and robustness of the framework.
+
+[funcchain](https://github.com/shroominic/funcchain) (MIT License) is a pythonic library for building cognitive systems by integrating LLMs into apps using pydantic models as output schemas and Langchain as the backend. It supports OpenAI Functions, LlamaCpp grammars (json-schema-mode), and local models for structured output generation. Key features include easy swapping between OpenAI and local models, dynamic output types, vision LLM support, Jinja templating for prompts, auto-retry parsing, synchronous and asynchronous execution, streaming, parallel processing, fallbacks, and more. funcchain simplifies error handling and supports enums, literal types, and custom parsing.
+
+[FuzzTypes](https://github.com/genomoncology/FuzzTypes) (MIT) expands Pydantic's data conversion capabilities by introducing autocorrecting annotation types for enhanced data normalization, including named entity linking and fuzzy string matching. It allows for the transformation of "dumb strings" into "smart things," facilitating the handling of complex data types such as emails, dates, and custom entities with ease.
+
+[guidance](https://github.com/guidance-ai/guidance) (Apache-2.0 License) is a library that makes it easy to control and interact with LLMs using normal Python code. It supports features like constrained generation, interleaving Python logic with LLM calls, an abstract chat interface that works across model types, reusable functions, and calling external tools from the LLM. Guidance automatically optimizes prompts to make generation faster than naive approaches and works with many model providers including local models (via Transformers or llama.cpp) and APIs (OpenAI, Anthropic, Cohere, VertexAI, etc). This allows writing programs that can execute on different backends without code changes.
+
+[Instructor](https://github.com/JasonLiu-DL/instructor) (MIT License) is a Python library that simplifies generating structured data like JSON from Large Language Models (LLMs) using Function Calling, Tool Calling, and constrained sampling modes like JSON mode and JSON Schema. Built on top of Pydantic, Instructor offers a user-friendly API for managing validation context, retries, and streaming responses. It supports various LLMs, including GPT-3.5, GPT-4, GPT-4-Vision, and open-source models like Mistral, Ollama, and llama-cpp-python. Instructor's integration with the OpenAI API and customizability through Pydantic make it a powerful tool for reliable structured data extraction from LLMs.
+
+[LangChain](https://github.com/langchain-ai/langchain) (MIT License) is a framework for developing applications powered by language models. It provides an interface for chains, integrations with other tools, and chains for applications. LangChain offers utilities for function calling, including syntax for binding functions to models, converters for formatting objects to function schemas, output parsers for extracting function invocations, and [chains for structured outputs](https://python.langchain.com/docs/guides/structured_output) using function calling. The library supports [function calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling) across models and provides methods to convert Python functions, Pydantic classes, and LangChain Tools into the expected formats.
+
+[LlamaIndex](https://github.com/run-llama/llama_index) (MIT License) is a central interface to connect your LLM's with external data. It provides a suite of tools for structuring data, loading indices, and querying those indices with LLMs to obtain structured outputs. LlamaIndex provides [modules for structured outputs](https://docs.llamaindex.ai/en/stable/module_guides/querying/structured_outputs/structured_outputs.html) at different levels of abstraction, including output parsers for text completion endpoints, [Pydantic programs](https://docs.llamaindex.ai/en/stable/module_guides/querying/structured_outputs/pydantic_program.html) for mapping prompts to structured outputs using function calling or output parsing, and pre-defined Pydantic programs for specific output types.
+
+[Marvin](https://github.com/PrefectHQ/marvin) (Apache-2.0 License) is a lightweight AI toolkit for building reliable, scalable, and easy-to-trust natural language interfaces. It offers a collection of self-documenting tools for common AI tasks like entity extraction, classification, synthetic data generation, and multi-modal support for images and audio. Marvin focuses on developer experience, enabling the integration of tightly-scoped "AI magic" into traditional software projects with minimal code. Key features include Pydantic model support, asynchronous interfaces, and experimentation with GPT-4's image understanding capabilities.
+
+[Outlines](https://github.com/outlines-dev) (Apache-2.0) facilitates structured text generation by integrating multiple models and using the Jinja templating engine for prompt construction. It supports generating text that adheres to specific formats, such as regex patterns, JSON schemas, Pydantic models, and context-free grammars. Outlines provides features like type constraints, dynamic stopping, caching, batch inference, and various sampling algorithms. It can be useful for projects requiring structured LLM outputs and offers Docker support for deployment.
+
+[Pydantic](https://github.com/pydantic/pydantic) (MIT) is a powerful and efficient data validation library for Python that simplifies the process of working with data structures and JSON. It allows developers to define data models using Python type annotations, ensuring that data is consistently validated and serialized. Pydantic's key features include the ability to define custom data types, perform automatic data validation, generate JSON schemas from models, and seamlessly parse and serialize JSON data. It has also become the de facto standard library for defining and validating function calling tools.
+
+[SGLang](https://github.com/sgl-project/sglang) (MPL-2.0) is a structured generation language designed for large language models (LLMs) that excels at generating and manipulating JSON data. Its flexible frontend allows developers to specify JSON schemas using regular expressions or Pydantic models, enabling constrained decoding and ensuring the generation of valid JSON outputs. SGLang's high-performance runtime, powered by RadixAttention, accelerates JSON decoding speeds by up to 3x through automatic KV cache reuse across multiple calls. The language also supports advanced features like parallelism, batching, and streaming, making it an efficient tool for JSON-focused LLM applications.
+
+## Blog Articles
+
+[Structured Generation Improves LLM performance: GSM8K Benchmark](https://blog.dottxt.co/performance-gsm8k.html) (2024-03-15, .txt Engineering) demonstrates that structured generation leads to consistent and substantial improvements in LLM performance on the GSM8K benchmark across 8 different models. The article highlights additional benefits of structured generation, such as "prompt consistency" and "thought-control," and suggests that structured generation is worth using even if structured output is not essential to a project. The findings also indicate that structured generation may reduce variance across changes to prompt formats and provide finer control over the Chain-of-Thought reasoning step.
+
+[LoRAX + Outlines: Better JSON Extraction with Structured Generation and LoRA](https://predibase.com/blog/lorax-outlines-better-json-extraction-with-structured-generation-and-lora) (2024-03-03, Predibase Blog by Jeffrey Tang and Travis Addair) combines the Outlines library with LoRAX v0.8 to improve JSON output structuring and schema adherence through structured generation, fine-tuning, and LoRA adapters. This method significantly enhances extraction accuracy and schema fidelity in JSON generation from LLMs.
+
+[FU, Show Me The Prompt. Quickly understand inscrutable LLM frameworks by intercepting API calls](https://hamel.dev/blog/posts/prompt/) (2023-02-14, [Hamel Husain](https://twitter.com/HamelHusain)) provides a practical guide to intercepting API calls made by various LLM libraries like guardrails, guidance, langchain, instructor, and DSPy using mitmproxy. By inspecting the prompts and API calls, developers can gain insights into how these tools work under the hood, assess their necessity, and make informed decisions about adopting or discarding them. The article emphasizes the importance of minimizing accidental complexity and maintaining a close connection with the underlying LLMs to avoid getting lost in framework-specific abstractions. It also highlights potential inefficiencies or suboptimal design patterns in some libraries, demonstrating the value of intercepting API calls for a deeper understanding.
+
+[Getting Started with Function Calling](https://www.promptingguide.ai/applications/function_calling) (2024-01-11, [Elvis Saravia](https://twitter.com/omarsar0)) introduces function calling, a technique enabling LLMs to connect with external tools and APIs by outputting JSON arguments. The article, part of a larger [Prompt Engineering Guide](https://www.promptingguide.ai/), provides an example of using OpenAI's API to build a conversational agent that answers questions about weather in a given location. It also highlights potential applications of function calling in natural language understanding, math problem-solving, API integration, and information extraction.
+
+[Pushing ChatGPT's Structured Data Support To Its Limits](https://minimaxir.com/2023/12/chatgpt-structured-data/) (2023-12-21, [Max Woolf](https://twitter.com/minimaxir)) delves into leveraging ChatGPT's structured data capabilities using the paid API, JSON schemas, and the Pydantic library. Key insights include using prompt engineering and system prompts to improve output quality, employing Pydantic to simplify schema definition, and applying techniques like two-pass generation, optional inputs, structured input data, nested schemas, and chain-of-thought reasoning. The article highlights the cost efficiency and determinism benefits of structured data support, even with smaller models.
+
+[Why use Instructor?](https://github.com/JasonLiu-DL/instructor/blob/main/docs/why.md) (2023-11-18, [Jason Liu](https://twitter.com/jxnlco)) explains the benefits of using the library for structured data extraction from LLMs. Built on top of Pydantic and OpenAI, Instructor offers a familiar and readable approach compared to raw JSON schemas. The library supports partial extraction, iterables, lists, and simple types, making it easy to try and install. Instructor also includes a self-correcting mechanism using Pydantic's validation model, allowing developers to add validators to the model to correct data without relying solely on prompts. After reading this article, be sure to read the [Instructor Cookbook](https://jxnl.github.io/instructor/examples/) and the [non-Instructor-Related Blog](https://jxnl.github.io/instructor/blog/) content on the [Instructor website](https://jxnl.github.io/instructor/).
+
+[Using grammars to constrain llama.cpp output](https://www.imaurer.com/llama-cpp-grammars/) (2023-09-06, [Ian Maurer](https://twitter.com/imaurer)) integrates context-free grammars with llama.cpp to refine LLM outputs, particularly for biomedical data. Employing Grammar Builder and a JSON schema to grammar conversion script, this approach yields more accurate and schema-compliant responses, bypassing the need for extensive prompt engineering.
+
+[Using OpenAI functions and their Python library for data extraction](https://til.simonwillison.net/gpt3/openai-python-functions-data-extraction) (2023-07-09, [Simon Willison](https://simonwillison.net/)) demonstrates how to extract structured data from text using the OpenAI Python library and function calling in a single API call. The article provides a code example that defines an `extract_locations()` function to extract location names and country ISO codes from a given text. It also discusses the limitations of using streaming with function calls and suggests using the `ijson` library for parsing streamed JSON chunks when necessary to provide visible feedback during long-running API calls.
+
+## Videos
+
+
+[Mistral AI Function Calling](https://www.youtube.com/watch?v=eOo4GfHj3ZE) (2024-02-24, [Sophia Yang](https://twitter.com/sophiamyang) [Mistral AI](https://mistral.ai/)) demonstrates how Mistral AI's function calling feature allows LLMs to connect to external tools, such as user-defined functions and APIs. By specifying tools and providing a query, users can leverage the LLM to generate function arguments, execute the selected function, and obtain results. While the video example focuses on retrieving payment information from a pandas DataFrame, this function calling capability could be extended to generate or manipulate JSON data by defining appropriate tools and functions.
+
+[Why do all LLMs need structured output modes?](https://www.fireworks.ai/blog-posts/why-do-all-llms-need-structured-output-modes) (2024-02-20, Fireworks.ai) discusses the importance of structured output modes for LLMs, which have become essential for ensuring predictable and parsable outputs in many use cases. The article introduces Fireworks' implementation of JSON mode and structured grammar mode across all their language models. JSON mode enables users to define a JSON output schema for the model to follow, while grammar mode allows for describing the desired context-free grammar in an extended BNF form. 
+
+[Function Calling in Ollama vs OpenAI](https://www.youtube.com/watch?v=RXDWkiuXtG0) (2024-02-13, [Matt Williams](https://twitter.com/Technovangelist)) compares the implementation of function calling in Ollama and OpenAI models. It clarifies that function calling is a misnomer, as the model itself does not call functions but rather generates output in a structured format like JSON, which the calling program can then parse to invoke functions. The video demonstrates how to achieve this using Python with both APIs, highlighting Ollama's simpler approach using the `format_json` parameter and a JSON schema. It also touches on using few-shot prompts to improve consistency in the model's responses.
+
+[LLM Engineering: Structured Outputs](https://www.youtube.com/watch?v=1xUeL63ymM0) (2024-02-12, [Jason Liu](https://twitter.com/jxnlco), [Weights & Biases Course](https://www.wandb.courses/)) Author of the Instructor library, offers a concise course on handling structured JSON output, function calling, and complex validations using Pydantic. This course covers the essentials of extracting and validating structured data from LLMs, making machine learning pipelines more robust and reliable, and integrating complex models and pipelines into production environments efficiently.
+
+[Why Pydantic became indispensable for LLMs](https://www.factsmachine.ai/p/how-pydantic-became-indispensable) (2024-01-19, [Adam Azzam](https://twitter.com/aaazzam)) explains how the Pydantic data validation library has emerged as a critical tool for working with LLMs. Pydantic enables sharing data models via standardized JSON schemas, which LLMs have been trained on extensively. This allows LLMs to reason between unstructured and structured data effectively. The article highlights the importance of quantizing the decision space for LLMs by using standards like JSON schemas that they understand well. However, it also notes potential issues due to LLMs being overfit to older JSON schema versions.
+
+[Pydantic is all you need](https://www.youtube.com/watch?v=yj-wSRJwrrc) (2023-10-10, [Jason Liu](https://twitter.com/jxnlco), [AI Engineer Conference](https://www.ai.engineer/)) discusses the importance of using Pydantic for structured prompting and output validation when working with large language models (LLMs). The talk introduces the Instructor library, which integrates Pydantic with OpenAI's function calling, enabling type-safe and modular prompts. Liu also showcases advanced applications like building knowledge graphs, query planning, and fact extraction, demonstrating how structured prompting can lead to more reliable and maintainable LLM-powered applications.
+
+## Jupyter Notebooks
+
+[Function Calling with llama-cpp-python and OpenAI Python Client](https://github.com/abetlen/llama-cpp-python/blob/main/examples/notebooks/Functions.ipynb) demonstrates the integration of function calling with llama-cpp-python and the OpenAI Python Client, including setup using the Instructor library. The notebook provides examples of retrieving weather information and extracting user details, showcasing the effectiveness and limitations of the process in terms of schema compatibility and highlighting the potential of function calling in practical applications.
+
+[Function Calling with Mistral Models](https://colab.research.google.com/github/mistralai/cookbook/blob/main/function_calling.ipynb) demonstrates how to use function calling to connect Mistral models with external tools, enabling users to build applications for specific use cases. The notebook walks through a simple example involving a payment transactions dataframe, defining two Python functions to retrieve payment status and date. It outlines the four steps of function calling: specifying tools and query, generating function arguments, executing the function, and generating the final answer. The guide also explains how to create JSON schemas for the functions and organize them in a dictionary for easy access.
+
+[chatgpt-structured-data](https://github.com/minimaxir/chatgpt-structured-data) by [Max Woolf](https://twitter.com/minimaxir) provides a collection of Jupyter Notebook demos showcasing ChatGPT's function calling and structured data support. The notebooks cover various use cases such as generating blog post summaries, solving sister problems, retrieving current weather data, working with simple and nested schemas, and handling structured input data. The repository offers a practical starting point for exploring ChatGPT's capabilities in generating and manipulating structured outputs.
 
 ## Leaderboards
 
-I am having a hard time keeping up with the latest and greatest open-source LLMs. Below are leaderboards I am checking periodically:
-
-- [HuggingFace Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-  The 🤗 Open LLM Leaderboard aims to track, rank and evaluate LLMs and chatbots as they are released.
-  (2023-05-23, HuggingFace)
-
-- [AlpacaEval 🦙 Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)
-  An Automatic Evaluator for Instruction-following Language Models
-  (2023-07-01, Stanford Alpaca/Tatsu Lab)
-
-- [Code Generation on HumanEval](https://paperswithcode.com/sota/code-generation-on-humaneval)
-  HumanEval problem solving dataset described in the paper "Evaluating Large Language Models Trained on Code"
-  (2023-07-01, Papers With Code)
-  
------
-
-## Local LLMs
-
-### Local LLM Repositories
-
-- [LLM Foundry](https://github.com/mosaicml/llm-foundry)
-  Release repo for MPT-7B and related models.
-  (2023-05-05, MosaicML, Apache 2.0)
-
-- [FastChat](https://github.com/lm-sys/FastChat)
-  Release repo for Vicuna and FastChat-T5
-  (2023-04-20, LMSYS, Apache 2.0)
-
-- [StabilityLM](https://github.com/stability-AI/stableLM/) -
-  Stability AI Language Models
-  (2023-04-19, StabilityAI, Apache and CC BY-SA-4.0)
-
-- [GPT4All](https://github.com/nomic-ai/gpt4all) -
-  LLM trained with ~800k GPT-3.5-Turbo Generations based on GPT-J and LLaMa.
-  (2023-04-13, Nomic AI, Apache/Meta ToS/OpenAI ToS)
- 
-- [Dolly](https://github.com/databrickslabs/dolly) -
-  Large language model trained on the Databricks Machine Learning Platform
-  (2023-03-24, Databricks Labs, Apache)
-  
-- [bloomz.cpp](https://github.com/NouamaneTazi/bloomz.cpp)
-  Inference of HuggingFace's BLOOM-like models in pure C/C++.
-  (2023-03-16, Nouamane Tazi, MIT License)
-  
-- [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp) -
-  Locally run an Instruction-Tuned Chat-Style LLM
-  (2023-03-16, Kevin Kwok, MIT License)
-
-- [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) -
-  Code and documentation to train Stanford's Alpaca models, and generate the data.
-  (2023-03-13, Stanford CRFM, Apache License, Non-Commercial Data, Meta/OpenAI ToS)
-
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) -
-  Port of Facebook's LLaMA model in C/C++. 
-  (2023-03-10, Georgi Gerganov, MIT License)
-
-- [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) -
-  ChatRWKV is like ChatGPT but powered by RWKV (100% RNN) language model, and open source.
-  (2023-01-09, PENG Bo, Apache License)
-  
-- [RWKV-LM](https://github.com/BlinkDL/RWKV-LM) -
-  RNN with Transformer-level LLM performance. Combines best of RNN and transformer: fast inference, saves VRAM, fast training.
-  (2022?, PENG Bo, Apache License)
-
-- [Open Assistant](https://open-assistant.io/) - A chat-based ChatGPT-like large language model. (2023-04-15, Pythia, LLAMA, Apache 2.0 License)
-
-### Local LLM Spaces, Models & Datasets
-
-- [RedPajama-Data-1T](https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T)
-  (2023-04-17, [@togethercompute](https://twitter.com/togethercompute))
-
-- [Vicuna 13b](https://huggingface.co/lmsys/vicuna-13b-delta-v1.1)
-  (2023-04-12, [@lmsysorg](https://twitter.com/lmsysorg))
-
-- [Dolly 15k Instruction Tuning Labels](https://github.com/databrickslabs/dolly/tree/master/data)
-  (2023-04-12, DataBricks, CC3 Allows Commercial Use)
-  
-- [Cerebras-GPT 7 Models](https://huggingface.co/cerebras)
-  (2023-03-28, Huggingface, Cerebras, Apache License)
-
-- [Alpine Data Cleaned](https://github.com/gururise/AlpacaDataCleaned)
-  (2023-03-21, Gene Ruebsamen, Apache & OpenAI ToS)
-
-- [Alpaca Dataset](https://huggingface.co/datasets/tatsu-lab/alpaca)
-  (2023-03-13, Huggingface, Tatsu-Lab, Meta ToS/OpenAI ToS)
-  
-- [Alpaca Model Search](https://huggingface.co/models?sort=downloads&search=alpaca)
-  (Huggingface, Meta ToS/OpenAI ToS)
-  
-
-### Local LLM Resources
-
-- [Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs](https://www.mosaicml.com/blog/mpt-7b)
-  (2023-05-05, MosaicML, Blog Post)
-
-- [Google "We Have No Moat, And Neither Does OpenAI"](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither)
-  (2023-05-04, Leaked Internal Google Document)
-
-- [RedPajama reproduces LLaMA training dataset of over 1.2 trillion tokens](https://www.together.xyz/blog/redpajama)
-  (2023-04-17, Together, Blog Post)
-
-- [What’s in the RedPajama-Data-1T LLM training set](https://simonwillison.net/2023/Apr/17/redpajama-data/)
-  (2023-04-17, Simon Willison, Blog Post)
-  
-- [GPT4All-J: An Apache-2 Licensed Assistant-Style Chatbot](https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf)
-  (2023-04-13, nomic.ai)
-
-- [Databricks releases Dolly 2.0, the first open, instruction-following LLM for commercial use](https://venturebeat-com.cdn.ampproject.org/c/s/venturebeat.com/ai/databricks-releases-dolly-2-0-the-first-open-instruction-following-llm-for-commercial-use/amp/)
-  (2023-04-13, Venture Beat, Sharon Goldman)
-
-- [Summary of Curent Models](https://docs.google.com/spreadsheets/d/1O5KVQW1Hx5ZAkcg8AIRjbQLQzx2wVaLl0SqUu-ir9Fs/edit#gid=1158069878)
-  (2023-04-11, Dr Alan D. Thompson, Google Sheet)
-
-- [Running GPT4All On a Mac Using Python langchain in a Jupyter Notebook](https://blog.ouseful.info/2023/04/04/running-gpt4all-on-a-mac-using-python-langchain-in-a-jupyter-notebook/)
-  (2023-04-04, Tony Hirst, Blog Post)
-
-- [Vicuna Homepage](https://vicuna.lmsys.org/)
-  (2023-04-01, Meta ToS)
-
-- [Cerebras-GPT vs LLaMA AI Model Comparison](https://www.lunasec.io/docs/blog/cerebras-gpt-vs-llama-ai-model-comparison/)
-  (2023-03-29, LunaSec, Blog Post)
-
-- [Cerebras-GPT: Family of Open, Compute-efficient, LLMs](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
-  (2023-03-28, Cerebras, Blog Post)
-
-- [Hello Dolly: Democratizing the magic of ChatGPT with open models](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
-  (2023-03-24, databricks, Blog Post)
-
-- [The Coming of Local LLMs](https://nickarner.com/notes/the-coming-of-local-llms-march-23-2023/)
-  (2023-03-23, Nick Arner, Blog Post)
-
-- [The RWKV language model: An RNN with the advantages of a transformer](https://johanwind.github.io/2023/03/23/rwkv_overview.html)
-  (2023-03-23, Johan Sokrates Wind, Blog Post)
-  
-- [Bringing Whisper and LLaMA to the masses](https://changelog.com/podcast/532)
-  (2023-03-15, The Changelog & Georgi Gerganov, Podcast Episode)
-  
-- [Alpaca: A Strong, Replicable Instruction-Following Model](https://crfm.stanford.edu/2023/03/13/alpaca.html)
-  (2023-03-13, Stanford CRFM, Project Homepage)
-
-- [Large language models are having their Stable Diffusion moment](https://simonwillison.net/2023/Mar/11/llama/)
-  (2023-03-10, Simon Willison, Blog Post)
-
-- [Running LLaMA 7B and 13B on a 64GB M2 MacBook Pro with llama.cpp](https://til.simonwillison.net/llms/llama-7b-m2)
-  (2023-03-10, Simon Willison, Blog/Today I Learned)
-  
-- [Introducing LLaMA: A foundational, 65-billion-parameter large language model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)
-  (2023-02-24, Meta AI, Meta ToS)
-
------
-
-## LLM-based Tools
-
-- [xTuring](https://github.com/stochasticai/xturing) -
-  This tool allows for the fine-tuning of language models either on your personal computer or in the cloud, all while minimizing GPU costs.
-  (2023-10-05, stochastic.ai)
-
-- [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
-  Enhancing Vision-language Understanding with Advanced Large Language Models
-  (2023-04-17, Vision CAIR Research Group, KAUST, BSD)
-
-- [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
-  A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, Pythia, OPT, and GALACTICA.
-  (2023-04-15, oobabooga, AGPL)
-
-- [TextSynth](https://bellard.org/ts_server/)
-  REST API for Large Language Models. Supports variety of models.
-  (2023-04-13, Fabrice Bellard, Commercial License GPU/Shareware CPU)
-
-- [FastChat](https://github.com/lm-sys/FastChat) -
-  The release repo for Vicuna: An Open Chatbot Impressing GPT-4
-  (2023-04-13, LM-SYS, Apache)
-
-- [tabby](https://github.com/TabbyML/tabby)
-  Self-hosted AI coding assistant.
-  (2023-04-12, TabbyML)
-
-- [Basaran](https://github.com/hyperonym/basaran)
-  Open-source text completion API for Transformers-based text generation models.
-  (2023-04-12, Hyperonym)
-
-- [TurboPilot](https://github.com/ravenscroftj/turbopilot)
-  CoPilot clone that runs code completion 6B-LLM with CPU and 4GB of RAM.
-  (2023-04-11, James Ravenscroft)
-
-- [talkGPT4All](https://github.com/vra/talkGPT4All) -
-  A voice chatbot based on OpenAI Whisper and GPT4All, running on local laptop.
-  (2023-04-09, Yunfeng Wang, MIT License)
-
-- [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo)
-  Data, models, and evaluation benchmark for large language models
-  (2023-04-08, FreedomIntelligence, Apache)
-
-- [LMFlow](https://github.com/OptimalScale/LMFlow)
-  An Extensible Toolkit for Finetuning and Inference of Large Foundation Models.
-  (2023-04-06, OptimalScale)
-
-----
-
-## Training and Quantization
-
-- [DeepSpeed](https://github.com/microsoft/DeepSpeed)
-  Deep learning optimization library that makes distributed training and inference easy.
-  (2023-04-13, Microsoft, Apache)
-  
-- [ColossalAI](https://github.com/hpcaitech/ColossalAI)
-  Making large AI models cheaper, faster and more accessible
-  (2023-04-16, HPC-AI, Apache)
-  
-- [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) -
-  4 bits quantization of LLaMA using GPTQ
-  (2023-04-01, qwopqwop200, Meta ToS)
-
-- [GPTQ](https://github.com/IST-DASLab/gptq)
-  Code for the ICLR 2023 paper "GPTQ: Accurate Post-training Quantization of Generative Pretrained Transformers".
-  (2023-03-22, IST Austria Distributed Algorithms and Systems Lab)
-
-- [xturing](https://github.com/stochasticai/xturing) -
-  Build and control your own LLMs
-  (2023-04-03, stochastic.ai)
-  
-- [spaCy](https://github.com/explosion/spaCy)
-  💫 Industrial-strength Natural Language Processing (NLP) in Python 
-  (2023-04-16, Explosion.ai, MIT)
-    
-----
-
-## Non-English Models & Datasets
-
-- [Polpaca](https://huggingface.co/mmosiolek/polpaca-lora-7b) -
-  Alpaca Speaks Polish
-  (2023-04-13, Marcin Mosiolek)
-
-- [KOZA](https://github.com/bqpro1/koza)
-  KOZA is an instruct model for Polish language forked from alpaca-lora.
-  (2023-04-13, Leszek Bukowski)
-  
-- [Owca](https://github.com/Emplocity/owca) is a Polish-translated dataset of instructions for fine-tuning the Alpaca model (2023-04-13, Emplocity)
-  
-----
-
-## LLM Technology for app integration
-
-- [semantic-kernel](https://github.com/microsoft/semantic-kernel)
-  Integrate cutting-edge LLM technology quickly and easily into your apps
-  (2023-04-16, Microsoft)
-  
-- [LangChain](https://github.com/hwchase17/langchain)
-  ⚡ Building applications with LLMs through composability ⚡
-  (2023-04-16, Langchain)
-  
-----
-
-## Autonomous Agents
-
-
-### Autonomous Agent Repositories
-
-- [AI Legion](https://github.com/eumemic/ai-legion) -
-  JS/TS framework for autonomous agents who can work together to accomplish tasks.
-  (2023-04-13, eumemic, MIT)
-
-- [AgentGPT](https://github.com/reworkd/AgentGPT) -
-  Assemble, configure, and deploy autonomous AI Agents in your browser.
-  (2023-04-12, Rework.ai)
-  
-- [babyagi](https://github.com/yoheinakajima/babyagi) -
-  Python script example of AI-powered task management system. Uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. 
-  (2023-04-06, Yohei Nakajima)
-
-- [ChatArena](https://github.com/chatarena/chatarena) - 
-  Multi-Agent Language Game Environments for LLMs.
-  (2023-04-05, UCL)
-  
-- [Auto-GPT](https://github.com/Torantulino/Auto-GPT) -
-  An experimental open-source attempt to make GPT-4 fully autonomous.
-  (2023-04-06, Toran Bruce Richards)
-
-- [JARVIS](https://github.com/microsoft/JARVIS) -
-  JARVIS, a system to connect LLMs with ML community
-  (2023-04-06, Microsoft)
-
-- [Autolang](https://github.com/alvarosevilla95/autolang) -
-  Based on BabyAGI, focused on workflows that complete. Powered by langchain.
-  (2023-04-10, Alvaro Sevilla)
-
-- [Embedchain](https://github.com/embedchain/embedchain) -
-  Framework to create ChatGPT like bots over your dataset.
-  (2023-07-19, Embedchain)
-
-### Autonomous Agent Resources
-
-- [Emergent autonomous scientific research capabilities of large language models](https://arxiv.org/abs/2304.05332)
-  (2023-04-11, Daniil A. Boiko,1 Robert MacKnight, and Gabe Gomes - Carnegie Mellon University)
-
-- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf)
-  (2023-04-07, Stanford and Google)
-
-- [Twitter List: Homebrew AGI Club](https://twitter.com/i/lists/1642934512836575232)
-  (2023-04-06, [@altryne](https://twitter.com/altryne)]
-
-- [LangChain: Custom Agents](https://blog.langchain.dev/custom-agents/)
-  (2023-04-03, LangChain)
- 
-- [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](https://arxiv.org/abs/2303.17580)
-  (2023-04-02, Microsoft)
-  
-- [Introducing Agents in Haystack: Make LLMs resolve complex tasks](https://haystack.deepset.ai/blog/introducing-haystack-agents) (2023-03-30, Haystack and Deepset)
-
-- [Introducing "🤖 Task-driven Autonomous Agent"](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20)
-  (2023-03-29, [@yoheinakajima](https://twitter.com/yoheinakajima))
-
-- [A simple Python implementation of the ReAct pattern for LLMs](https://til.simonwillison.net/llms/python-react-pattern)
-  (2023-03-17, Simon Willison)
-
-- [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/)
-  (2023-03-10, Princeton & Google)
-
-----
-
-## Prompting Tools
-
-- [Aim 💫 — An easy-to-use & supercharged open-source AI metadata tracker (experiment tracking, prompt engineering)](https://github.com/aimhubio/aim)
-  (2023-04-16, [AimStack](https://aimstack.io/)
+[Berkeley Function-Calling Leaderboard (BFCL)](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html) is a comprehensive evaluation framework for LLMs' function-calling capabilities, covering diverse programming languages and complex use cases. The BFCL includes over 2k question-function-answer pairs across languages like Python, Java, JavaScript, SQL, and REST API, focusing on simple, multiple, and parallel function calls, as well as function relevance detection. This leaderboard aims to standardize the assessment of LLMs in executing function calls, contributing to the development of more capable and versatile models.
