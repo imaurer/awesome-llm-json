@@ -22,7 +22,7 @@ Unfortunately, generating JSON goes by a few different names that roughly mean t
 * [Guided Generation](https://arxiv.org/abs/2307.09702): For constraining an LLM model to generate text that follows a prescribed specification such as a [Context-Free Grammar](https://en.wikipedia.org/wiki/Context-free_grammar).
 * [GPT Actions](https://platform.openai.com/docs/actions/introduction): ChatGPT invokes actions (i.e. API calls) based on the endpoints and parameters specified in an [OpenAPI specification](https://swagger.io/specification/). Unlike the capability called "Function Calling", this capability will indeed call your function hosted by an API server.
 
-None of these names are great, that's why I named this awesome list "LLM :heart: JSON".
+None of these names are great, that's why I named this list just "Awesome LLM JSON".
   
 ## Hosted Models
 
