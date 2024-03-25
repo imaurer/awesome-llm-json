@@ -56,6 +56,10 @@ Below is a list of hosted API models that support multiple parallel function cal
 	- Mixtral-8x7B-Instruct-v0.1
 	- Mistral-7B-Instruct-v0.1
 	- CodeLlama-34b-Instruct
+- anthropic (supported using Mirascope)
+	- claude-3-opus-20240229
+	- claude-3-sonnet-20240229
+	- claude-3-haiku-20240307
  
 ## Local Models
 
@@ -91,6 +95,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 [Pydantic](https://github.com/pydantic/pydantic) (MIT) simplifies working with data structures and JSON through data model definition, validation, JSON schema generation, and seamless parsing and serialization.
 
 [SGLang](https://github.com/sgl-project/sglang) (MPL-2.0) allows specifying JSON schemas using regular expressions or Pydantic models for constrained decoding. Its high-performance runtime accelerates JSON decoding.
+
+[Mirascope](https://github.com/Mirascope/mirascope) (MIT) is an LLM toolkit for lightning-fast, high-quality development. It supports structured extraction, and is the first tool to handle nested and def/ref schemas using Anthropic function calling.
 
 ## Blog Articles
 
