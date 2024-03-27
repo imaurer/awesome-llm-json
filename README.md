@@ -98,6 +98,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [Mirascope](https://github.com/Mirascope/mirascope) (MIT) is an LLM toolkit for lightning-fast, high-quality development. It supports structured extraction, and is the first tool to handle nested and def/ref schemas using Anthropic function calling.
 
+[Magnetic](https://github.com/jackmpcollins/magentic) (MIT) call LLMs from Python using 3 lines of code. Simply use the @prompt decorator to create functions that return structured output from the LLM, powered by Pydantic.
+
 ## Blog Articles
 
 [Structured Generation Improves LLM performance: GSM8K Benchmark](https://blog.dottxt.co/performance-gsm8k.html) (2024-03-15, .txt Engineering) demonstrates consistent improvements across 8 models, highlighting benefits like "prompt consistency" and "thought-control."
