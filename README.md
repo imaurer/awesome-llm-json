@@ -30,6 +30,7 @@ None of these names are great, that's why I named this list just "Awesome LLM JS
 
 | Provider     | Models                                                                             | Links                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Anthropic    | Claude 3 Opus, Sonnet, Haiku                                                       | [API Docs](https://docs.anthropic.com/claude/docs/tool-use)<br>[Pricing](https://docs.anthropic.com/claude/docs/tool-use)                                                                                                                                                                                                                                                                                                                |
 | AnyScale     | Mistral-7B-Instruct-v0.1<br>Mixtral-8x7B-Instruct-v0.1                             | [Function Calling](https://docs.endpoints.anyscale.com/text-generation/function-calling)<br>[JSON Mode](https://docs.endpoints.anyscale.com/text-generation/json-mode)<br>[Pricing](https://docs.endpoints.anyscale.com/pricing/)<br>[Announcement (2023)](https://www.anyscale.com/blog/anyscale-endpoints-json-mode-and-function-calling-features)                                                                                     |
 | Azure        | gpt-4<br>gpt-4-turbo<br>gpt-35-turbo<br>mistral-large-latest<br>mistral-large-2402 | [Function Calling](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling?tabs=python)<br>[OpenAI Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/#pricing)<br>[Mistral Pricing](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/000-000.mistral-ai-large-offer?tab=PlansAndPrice)                                                                |
 | Cohere       | Command-R<br>Command-R+                                                            | [Function Calling](https://docs.cohere.com/docs/tool-use)<br>[Pricing](https://cohere.com/pricing)<br>[Command-R (2024-03-11)](https://txt.cohere.com/command-r/)<br>[Command-R+ (2024-04-04)](https://txt.cohere.com/command-r-plus-microsoft-azure/)                                                                                                                                                                                   |
@@ -45,6 +46,10 @@ None of these names are great, that's why I named this list just "Awesome LLM JS
 
 Below is a list of hosted API models that support multiple parallel function calls. This could include checking the weather in multiple cities or first finding the location of a hotel and then checking the weather at it's location.
 
+- anthropic
+	- claude-3-opus-20240229
+	- claude-3-sonnet-20240229
+	- claude-3-haiku-20240307
 - azure/openai
 	- gpt-4-turbo-preview
 	- gpt-4-1106-preview
@@ -57,10 +62,6 @@ Below is a list of hosted API models that support multiple parallel function cal
 	- Mixtral-8x7B-Instruct-v0.1
 	- Mistral-7B-Instruct-v0.1
 	- CodeLlama-34b-Instruct
-- anthropic (supported using Mirascope)
-	- claude-3-opus-20240229
-	- claude-3-sonnet-20240229
-	- claude-3-haiku-20240307
  
 ## Local Models
 
@@ -99,7 +100,7 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [SGLang](https://github.com/sgl-project/sglang) (MPL-2.0) allows specifying JSON schemas using regular expressions or Pydantic models for constrained decoding. Its high-performance runtime accelerates JSON decoding.
 
-[Mirascope](https://github.com/Mirascope/mirascope) (MIT) is an LLM toolkit for lightning-fast, high-quality development. It supports structured extraction, and is the first tool to handle nested and def/ref schemas using Anthropic function calling.
+[Mirascope](https://github.com/Mirascope/mirascope) (MIT) is an LLM toolkit that supports structured extraction with an intuitive python API.
 
 [Magnetic](https://github.com/jackmpcollins/magentic) (MIT) call LLMs from Python using 3 lines of code. Simply use the @prompt decorator to create functions that return structured output from the LLM, powered by Pydantic.
 
