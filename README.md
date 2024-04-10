@@ -114,6 +114,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [Coalescence: making LLM inference 5x faster](https://blog.dottxt.co/coalescence.html) (2024-02-02, .txt Engineering) shows how structured generation can be made faster than unstructured generation using a technique called "coalescence", with a caveat regarding how it may affect the quality of the generation.
 
+[Why Pydantic became indispensable for LLMs](https://www.factsmachine.ai/p/how-pydantic-became-indispensable) (2024-01-19, [Adam Azzam](https://twitter.com/aaazzam)) explains Pydantic's emergence as a critical tool, enabling sharing data models via JSON schemas and reasoning between unstructured and structured data. Highlights the importance of quantizing the decision space and potential issues with LLMs overfitting to older schema versions.
+
 [Getting Started with Function Calling](https://www.promptingguide.ai/applications/function_calling) (2024-01-11, Elvis Saravia) introduces function calling for connecting LLMs with external tools and APIs, providing an example using OpenAI's API and highlighting potential applications.
 
 [Pushing ChatGPT's Structured Data Support To Its Limits](https://minimaxir.com/2023/12/chatgpt-structured-data/) (2023-12-21, Max Woolf) delves into leveraging ChatGPT's capabilities using paid API, JSON schemas, and Pydantic. Highlights techniques for improving output quality and the benefits of structured data support.
@@ -126,6 +128,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 ## Videos
 
+[GPT Extracting Unstructured Data with Datasette and GPT-4 Turbo](https://www.youtube.com/watch?v=g3NtJatmQR0) (2024-04-09, Simon Willison) showcases the datasette-extract plugin's ability to populate database tables from unstructured text and images, leveraging GPT-4 Turbo's API for data extraction.
+
 [LLM Structured Output for Function Calling with Ollama](https://www.youtube.com/watch?v=_-FrUReljTQ) (2024-03-25, Andrej Baranovskij) demonstrates function calling-based data extraction using Ollama, Instructor and [Sparrow agent](https://github.com/katanaml/sparrow). 
 
 [Hermes 2 Pro Overview](https://www.youtube.com/watch?v=ViXURxck-HM) (2024-03-18, Prompt Engineer) introduces Hermes 2 Pro, a 7B parameter model excelling at function calling and structured JSON output. Demonstrates 90% accuracy in function calling and 84% in JSON mode, outperforming other models.
@@ -135,8 +139,6 @@ Below is a list of hosted API models that support multiple parallel function cal
 [Function Calling in Ollama vs OpenAI](https://www.youtube.com/watch?v=RXDWkiuXtG0)  (2024-02-13, [Matt Williams](https://twitter.com/Technovangelist)) clarifies that models generate structured output for parsing and invoking functions. Compares implementations, highlighting Ollama's simpler approach and using few-shot prompts for consistency.
 
 [LLM Engineering: Structured Outputs](https://www.youtube.com/watch?v=1xUeL63ymM0) (2024-02-12, [Jason Liu](https://twitter.com/jxnlco), [Weights & Biases Course](https://www.wandb.courses/)) offers a concise course on handling structured JSON output, function calling, and validations using Pydantic, covering essentials for robust pipelines and efficient production integration.
-
-[Why Pydantic became indispensable for LLMs](https://www.factsmachine.ai/p/how-pydantic-became-indispensable) (2024-01-19, [Adam Azzam](https://twitter.com/aaazzam)) explains Pydantic's emergence as a critical tool, enabling sharing data models via JSON schemas and reasoning between unstructured and structured data. Highlights the importance of quantizing the decision space and potential issues with LLMs overfitting to older schema versions.
 
 [Pydantic is all you need](https://www.youtube.com/watch?v=yj-wSRJwrrc)  (2023-10-10, [Jason Liu](https://twitter.com/jxnlco), [AI Engineer Conference](https://www.ai.engineer/)) discusses the importance of Pydantic for structured prompting and output validation, introducing the Instructor library and showcasing advanced applications for reliable and maintainable LLM-powered applications.
 
