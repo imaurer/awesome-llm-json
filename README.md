@@ -106,6 +106,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 ## Blog Articles
 
+[How fast can grammar-structured generation be?](http://blog.dottxt.co/how-fast-cfg.html) (2024-04-12, .txt Engineering) demonstrates an almost cost-free method to generate text that follows a grammar. It is shown to outperform `llama.cpp` by a factor of 50x on the C grammar.
+
 [Structured Generation Improves LLM performance: GSM8K Benchmark](https://blog.dottxt.co/performance-gsm8k.html) (2024-03-15, .txt Engineering) demonstrates consistent improvements across 8 models, highlighting benefits like "prompt consistency" and "thought-control."
 
 [LoRAX + Outlines: Better JSON Extraction with Structured Generation and LoRA](https://predibase.com/blog/lorax-outlines-better-json-extraction-with-structured-generation-and-lora) (2024-03-03, Predibase Blog) combines Outlines with LoRAX v0.8 to enhance extraction accuracy and schema fidelity through structured generation, fine-tuning, and LoRA adapters.
