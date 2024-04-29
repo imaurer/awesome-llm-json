@@ -4,16 +4,14 @@ This awesome list is dedicated to resources for using Large Language Models (LLM
   
 ## Table of Contents  
   
-- [Awesome LLM JSON List](#awesome-llm-json-list)
-	- [Table of Contents](#table-of-contents)
-	- [Terminology](#terminology)
-	- [Hosted Models](#hosted-models)
-	- [Local Models](#local-models)
-	- [Python Libraries](#python-libraries)
-	- [Blog Articles](#blog-articles)
-	- [Videos](#videos)
-	- [Jupyter Notebooks](#jupyter-notebooks)
-	- [Leaderboards](#leaderboards)
+* [Terminology](#terminology)  
+* [Hosted Models](#hosted-models)
+* [Local Models](#local-models)
+* [Python Libraries](#python-libraries)
+* [Blog Articles](#blog-articles)
+* [Videos](#videos) 
+* [Jupyter Notebooks](#jupyter-notebooks)
+* [Leaderboards](#leaderboards)
   
 ## Terminology  
   
