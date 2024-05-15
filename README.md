@@ -104,6 +104,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [SGLang](https://github.com/sgl-project/sglang) (MPL-2.0) allows specifying JSON schemas using regular expressions or Pydantic models for constrained decoding. Its high-performance runtime accelerates JSON decoding.
 
+[SynCode](https://github.com/uiuc-focal-lab/syncode) (MIT) is a framework for the grammar-guided generation of Large Language Models (LLMs). It supports CFG for Python, Go, Java, JSON, YAML, and many more.
+
 [Mirascope](https://github.com/Mirascope/mirascope) (MIT) is an LLM toolkit that supports structured extraction with an intuitive python API.
 
 [Magnetic](https://github.com/jackmpcollins/magentic) (MIT) call LLMs from Python using 3 lines of code. Simply use the @prompt decorator to create functions that return structured output from the LLM, powered by Pydantic.
