@@ -66,6 +66,8 @@ Below is a list of hosted API models that support multiple parallel function cal
  
 ## Local Models
 
+[Mistral 7B Instruct v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) (2024-05-22, Apache 2.0) an instruct fine-tuned version of Mistral with added function calling support.
+
 [C4AI Command R+](https://huggingface.co/CohereForAI/c4ai-command-r-plus) (2024-03-20, CC-BY-NC, Cohere) is a 104B parameter multilingual model with advanced Retrieval Augmented Generation (RAG) and tool use capabilities, optimized for reasoning, summarization, and question answering across 10 languages. Supports quantization for efficient use and demonstrates unique multi-step tool integration for complex task execution.
 
 [Hermes 2 Pro - Mistral 7B](https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B) (2024-03-13, Nous Research) is a 7B parameter model that excels at function calling, JSON structured outputs, and general tasks. Trained on an updated OpenHermes 2.5 Dataset and a new function calling dataset, it uses a special system prompt and multi-turn structure. Achieves 91% on function calling and 84% on JSON mode evaluations.
