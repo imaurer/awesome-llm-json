@@ -17,7 +17,7 @@ This awesome list is dedicated to resources for using Large Language Models (LLM
   
 Unfortunately, generating JSON goes by a few different names that roughly mean the same thing:  
   
-* Structured Outputs: Using an LLM to generate any structured output including JSON, XML, or YAML regardless of technique (e.g. function calling, guided generation).
+* [Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs): Using an LLM to generate any structured output including JSON, XML, or YAML regardless of technique (e.g. function calling, guided generation).
 * [Function Calling](https://www.promptingguide.ai/applications/function_calling): Providing an LLM a hypothetical (or actual) function definition for it to "call" in it's chat or completion response. The LLM doesn't actually call the function, it just provides an indication that one should be called via a JSON message.
 * [JSON Mode](https://platform.openai.com/docs/guides/text-generation/json-mode): Specifying that an LLM must generate valid JSON. Depending on the provider, a schema may or may not be specified and the LLM may create an unexpected schema.
 * [Tool Usage](https://python.langchain.com/docs/modules/agents/agent_types/openai_tools): Giving an LLM a choice of tools such as image generation, web search, and "function calling".  The functional calling parameter in the API request is now called "tools".
