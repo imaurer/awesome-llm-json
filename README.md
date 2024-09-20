@@ -113,6 +113,9 @@ Below is a list of hosted API models that support multiple parallel function cal
 [Magnetic](https://github.com/jackmpcollins/magentic) (MIT) call LLMs from Python using 3 lines of code. Simply use the @prompt decorator to create functions that return structured output from the LLM, powered by Pydantic.
 
 [Formatron](https://github.com/Dan-wanna-M/formatron) (MIT) is an efficient and scalable constrained decoding library that enables controlling over language model output format using f-string templates that support regular expressions, context-free grammars, JSON schemas, and Pydantic models. Formatron integrates seamlessly with various model inference libraries.
+
+[Transformers-cfg](https://github.com/epfl-dlab/transformers-CFG) (MIT) extends Hugging Face Transformers with context-free grammar (CFG) support via an EBNF interface. It enables grammar-constrained generation with minimal changes to existing code of transformers and supports JSON mode and JSON Schema.
+
 ## Blog Articles
 
 [How fast can grammar-structured generation be?](http://blog.dottxt.co/how-fast-cfg.html) (2024-04-12, .txt Engineering) demonstrates an almost cost-free method to generate text that follows a grammar. It is shown to outperform `llama.cpp` by a factor of 50x on the C grammar.
