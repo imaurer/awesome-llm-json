@@ -104,6 +104,8 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 [Pydantic](https://github.com/pydantic/pydantic) (MIT) simplifies working with data structures and JSON through data model definition, validation, JSON schema generation, and seamless parsing and serialization.
 
+[PydanticAI](https://github.com/pydantic/pydantic-ai) (MIT) is a Python agent framework designed to make it less painful to build production grade applications with Generative AI.
+
 [SGLang](https://github.com/sgl-project/sglang) (MPL-2.0) allows specifying JSON schemas using regular expressions or Pydantic models for constrained decoding. Its high-performance runtime accelerates JSON decoding.
 
 [SynCode](https://github.com/uiuc-focal-lab/syncode) (MIT) is a framework for the grammar-guided generation of Large Language Models (LLMs). It supports CFG for Python, Go, Java, JSON, YAML, and many more.
