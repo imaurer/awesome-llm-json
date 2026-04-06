@@ -2,6 +2,7 @@
 
 This awesome list is dedicated to resources for using Large Language Models (LLMs) to generate JSON or other structured outputs.
   
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 structured agent system prompts for Claude Code with JSON task registry, quality gates, and automated delegation patterns.
 ## Table of Contents  
   
 * [Terminology](#terminology)  
