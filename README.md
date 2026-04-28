@@ -84,7 +84,9 @@ Below is a list of hosted API models that support multiple parallel function cal
 ## Python Libraries
 
 
-[DSPy](https://github.com/stanfordnlp/dspy) (MIT) is a framework for algorithmically optimizing LM prompts and weights. DSPy introduced [typed predictor and signatures](https://github.com/entropy/dspy/blob/main/docs/docs/building-blocks/8-typed_predictors.md) to leverage [Pydantic](https://github.com/pydantic/pydantic) for enforcing type constraints on inputs and outputs, improving upon string-based fields. 
+[DSPy](https://github.com/stanfordnlp/dspy) (MIT) is a framework for algorithmically optimizing LM prompts and weights. DSPy introduced [typed predictor and signatures](https://github.com/entropy/dspy/blob/main/docs/docs/building-blocks/8-typed_predictors.md) to leverage [Pydantic](https://github.com/pydantic/pydantic) for enforcing type constraints on inputs and outputs, improving upon string-based fields.
+
+[distill-json](https://github.com/karthyick/DISTILL) (MIT) compresses JSON payloads for LLM consumption using a 3-layer approach: schema extraction (objects → tuples + field names), dictionary encoding (frequent values → single-letter codes), and equivalence partitioning (repeated tuples → references). Achieves 60-85% token reduction on bulk repeated records (logs, events, API arrays) while keeping output LLM-readable and 100% lossless. Drop-in replacement for `json.dumps()`.
 
 [FuzzTypes](https://github.com/genomoncology/FuzzTypes) (MIT) extends Pydantic with autocorrecting annotation types for enhanced data normalization and handling of complex types like emails, dates, and custom entities.
 
