@@ -168,4 +168,6 @@ Below is a list of hosted API models that support multiple parallel function cal
 
 ## Leaderboards
 
+[AI Models Catalog](https://github.com/i-need-token/ai-models) - Structured database of 4,587+ AI models across 95 providers. Includes 829 models with structured output support, 2,350 with tool calling, and pricing/context/capability data. [Interactive catalog](https://i-need-token.github.io/ai-models/) with model picker and price calculator.
+
 [Berkeley Function-Calling Leaderboard (BFCL)](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html) is an evaluation framework for LLMs' function-calling capabilities including over 2k question-function-answer pairs across languages like Python, Java, JavaScript, SQL, and REST API, focusing on simple, multiple, and parallel function calls, as well as function relevance detection.
